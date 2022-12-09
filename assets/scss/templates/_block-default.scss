@@ -1,0 +1,9 @@
+.org--block-default {
+	margin-bottom: $margin--small;
+}
+
+@media (min-width: $media-tablet) {
+	.org--block-default {
+		margin-bottom: $margin--large;
+	}
+}

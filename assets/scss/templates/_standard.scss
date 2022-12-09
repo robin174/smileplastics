@@ -1,0 +1,36 @@
+.mol--5050-content {
+	margin: $margin--general;
+}
+
+@media(min-width: $media-tablet) {
+	.mol--5050-content {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: $margin--general;
+		margin-right: $margin--general;
+	}
+}
+
+@media(min-width: $media-wide) {
+	.mol--5050-content {
+		margin-left: $margin--general*3;
+		margin-right: $margin--general*2;
+	}
+}
+
+.mol--repeater-text {
+	&:last-child {
+		margin-top: $margin--general;
+	}
+}
+
+
+.ut--block-margin {
+	margin-bottom: $margin--small;
+}
+
+@media(min-width: $media-tablet) {
+	.ut--block-margin {
+		margin-bottom: $margin--large;
+	}
+}

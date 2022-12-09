@@ -1,0 +1,23 @@
+<?php
+/**
+* Template Name: Page - Utility
+* @package smileplastics
+*/
+get_header(); ?>
+
+<section class="templ--single-page mol--page-main">		
+	<?php get_template_part('template-parts/header-hero'); ?>
+				
+	<?php get_template_part('template-parts/block-default'); ?>
+
+	<?php if(is_page('panels')) : ?>
+		<?php get_template_part('template-parts/part-key-stats'); ?>
+		<?php get_template_part('template-parts/materials-classic-lg'); ?>
+		<?php get_template_part('template-parts/material-specifics'); ?>
+	<?php endif; ?>
+
+	<!-- Page Builder -->
+	<?php get_template_part ('template-parts/all-page-builder'); ?>
+</section>
+
+<?php get_footer(); // to counter php close tag issue

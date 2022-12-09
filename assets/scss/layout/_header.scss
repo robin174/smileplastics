@@ -1,0 +1,22 @@
+header {
+	background-color: $color--white;
+	& .container {
+		padding: 0 $padding--small;
+	}
+	& figure {
+		padding: 15px 0;
+		& img.logo-brand {
+			height: 20px;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	header {
+		& figure {
+			& img.logo-brand {
+				height: 30px;
+			}
+		}
+	}
+}

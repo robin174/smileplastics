@@ -1,0 +1,12 @@
+section[class^="templ--single"] {
+	overflow-x: hidden;
+	& h2 {
+		margin-top: $margin--small;
+		margin-bottom: $margin--small;
+		font-size: 2.4rem;
+	}
+	& h3 {
+		font-size: 2rem;
+		margin-bottom: $margin--small*0.5;
+	}
+}

@@ -1,0 +1,9 @@
+.org--blockquote-brand {
+	margin-top: $margin--xlarge;
+	& .org--blockquote-brand-inner {
+		padding: $padding--large;
+	}
+	& .atm--button-cta {
+		margin-top:0;
+	}
+}

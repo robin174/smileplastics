@@ -1,0 +1,132 @@
+footer {
+	background-color: rgba($color--primary,1);
+	padding: $padding--general $padding--general;
+	& a {
+		transition: 0.3s;
+		&:hover {
+			color: rgba($color--white, 0.3);
+		}
+	}
+	& h4 {
+		font-size:1.2rem;
+		letter-spacing: 0.05em;
+		margin-bottom: 30px;
+		color: $color--white;
+		font-family: $brand--font-reg;
+	}
+	& p {
+		color: $color--white;
+		letter-spacing: 0.05em;
+		font-size:0.85rem;
+		margin-bottom: 10px;
+		line-height: 1.8;
+		&.copyright {
+			color: rgba($color--white,0.4);
+			margin-bottom: 0;
+		}
+	}
+	& ul {
+		padding-left: 0;
+		margin-left: 0;
+		list-style: none;
+		& li {
+			@include footerUC;
+			color: $color--white;
+			font-size: 0.8rem;
+			padding-left: 0;
+			margin-left: 0;
+			margin-bottom: 18px;
+			& a {
+				color: $color--white;
+				text-decoration: none;
+			}
+		}
+	}
+	& a.icon-social {
+		color: $color--white;
+		margin-right: $margin--general;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			color: rgba($color--white,0.4);
+		}
+		&.inactive {
+	  		cursor: not-allowed;
+	  		color: rgba($color--white,0.3);
+		}
+	}
+	& .col-big {
+		margin-bottom: $margin--general*2;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	& .block--details {
+		margin-bottom: $margin--general*1.5;
+	}
+	& figure img.logo-s {
+		margin-bottom: 36px;
+	}
+	& figure img.logo-brand {
+		height: 18px;
+		margin-bottom: 12px;
+	}
+	& figure.iso-certification {
+		max-width: 200px;
+		& img.logo-iso {
+			// height: 140px;
+		}
+		& figcaption.iso-details {
+			color: $color--white;
+			text-align: center;
+			margin-top: 5px;
+			font-size: 0.65rem;
+			line-height: 1.4;
+		}
+	}
+
+	
+}
+
+@media (min-width:992px) {
+	footer {
+		padding: $padding--general*3 $padding--general;
+	}
+}
+
+
+// To clear
+.mol__unit-whoweare {
+	& p {
+		font-size: 2rem;
+		line-height: 1.4;
+		color: $color--white;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+		padding-right: $padding--general*2;
+	}
+	& p.atm__copyright {
+ 		margin-top: 80px;
+  		font-size: 0.8rem;
+	}
+}
+
+.mol__unit-contact {
+  border-top: solid 1px $color--highlight-dark;
+  padding-top: $padding--small;
+  margin-bottom: $margin--small*3;
+  color: white;
+  &:last-child {
+  	margin-bottom: 0;
+  }
+  & h4 {
+  	@include headingUC;
+  	color: $color--secondary;
+  	font-size: 0.9rem;
+  	margin-bottom: 8px;
+  }
+  & span {
+  	font-size: 1.2rem;
+  }
+}

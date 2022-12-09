@@ -1,0 +1,10 @@
+.org--introduction-home {
+	padding: 0 $padding--general;
+	margin-bottom: $margin--large;
+	text-align: center;
+	& h1 {}
+	& p {
+		font-size: 1.6rem;
+		margin:30px;
+	}
+}

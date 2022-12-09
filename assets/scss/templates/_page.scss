@@ -1,0 +1,33 @@
+.org--hero-page {
+	background-color: $color--bg-light;
+	margin-bottom: $margin--small;
+	line-height:1;
+	padding:0;
+	.mol--hero-page {
+		.atm--hero-page {}
+	}
+	& .mol--hero-overlay {
+		position:absolute; 
+		z-index: 10;
+		top: 50%; 
+		left: 0; 
+		transform: translate(0,-50%);
+		background-color: rgba($color--primary,0.7);
+		color: $color--white;
+		padding:$padding--small $padding--general;
+		& h2 {
+			font-size: 4rem;
+			color: $color--white;
+		}
+		& h4 {
+			font-size: 1.8rem;
+			color: $color--white;
+		}
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--hero-page {
+		margin-bottom: $margin--large;
+	}
+}
