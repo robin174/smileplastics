@@ -101,7 +101,21 @@
 						<div class="d-flex justify-content-center justify-content-lg-start">
 							<figure>
 								<img class="mw-100" <?php if(get_sub_field('halfhpg_imglft_mw')) { ?>style="width:<?php the_sub_field('halfhpg_imglft_mw'); ?>px;"<?php } ?> src="<?php the_sub_field('halfhpg_image_left'); ?>">
-								<figcaption class="atm--fc-default"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php if( get_sub_field('halfhpg_image_left_cap_pos') == 'overlaylight' && get_sub_field('halfhpg_image_left_cap_lr') == 'captionleft' ) { ?>
+									<figcaption class="atm--fc-overlaylight atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_left_cap_pos') == 'overlaylight' && get_sub_field('halfhpg_image_left_cap_lr') == 'captionright' ) { ?>
+									<figcaption class="atm--fc-overlaylight atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_left_cap_pos') == 'overlaydark' && get_sub_field('halfhpg_image_left_cap_lr') == 'captionleft' ) { ?>
+									<figcaption class="atm--fc-overlaydark atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_left_cap_pos') == 'overlaydark' && get_sub_field('halfhpg_image_left_cap_lr') == 'captionright' ) { ?>
+									<figcaption class="atm--fc-overlaydark atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_left_cap_pos') == 'rotated' ) { ?>
+									<figcaption class="atm--fc-rotated"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_left_cap_pos') == 'default' && get_sub_field('halfhpg_image_left_cap_lr') == 'captionleft') { ?>
+									<figcaption class="atm--fc-default atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_left_cap_pos') == 'default' && get_sub_field('halfhpg_image_left_cap_lr') == 'captionright') { ?>
+									<figcaption class="atm--fc-default atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_left_cap'); ?></figcaption>
+								<?php } ?>
 							</figure>
 						</div>
 					</div>
@@ -109,7 +123,21 @@
 						<div class="d-flex justify-content-center justify-content-lg-start">
 							<figure class="rotate-figcaption">
 								<img class="mw-100" <?php if(get_sub_field('halfhpg_imgrgt_mw')) { ?>style="width:<?php the_sub_field('halfhpg_imgrgt_mw'); ?>px;"<?php } ?> src="<?php the_sub_field('halfhpg_image_right'); ?>">
-								<figcaption class="atm--fc-rotated"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php if( get_sub_field('halfhpg_image_right_cap_pos') == 'overlaylight' && get_sub_field('halfhpg_image_right_cap_lr') == 'captionleft' ) { ?>
+									<figcaption class="atm--fc-overlaylight atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_right_cap_pos') == 'overlaylight' && get_sub_field('halfhpg_image_right_cap_lr') == 'captionright' ) { ?>
+									<figcaption class="atm--fc-overlaylight atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_right_cap_pos') == 'overlaydark' && get_sub_field('halfhpg_image_right_cap_lr') == 'captionleft' ) { ?>
+									<figcaption class="atm--fc-overlaydark atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_right_cap_pos') == 'overlaydark' && get_sub_field('halfhpg_image_right_cap_lr') == 'captionright' ) { ?>
+									<figcaption class="atm--fc-overlaydark atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_right_cap_pos') == 'rotated' ) { ?>
+									<figcaption class="atm--fc-rotated"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_right_cap_pos') == 'default' && get_sub_field('halfhpg_image_right_cap_lr') == 'captionleft') { ?>
+									<figcaption class="atm--fc-default atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } elseif( get_sub_field('halfhpg_image_right_cap_pos') == 'default' && get_sub_field('halfhpg_image_right_cap_lr') == 'captionright') { ?>
+									<figcaption class="atm--fc-default atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('halfhpg_image_right_cap'); ?></figcaption>
+								<?php } ?>
 							</figure>
 						</div>
 					</div>
