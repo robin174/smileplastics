@@ -888,9 +888,18 @@ footer figure.iso-certification figcaption.iso-details {
 }
 
 .org--banneradvert {
+  color: #413c2d;
   background-color: #e6e6e6;
   padding: 12px 0;
   margin-top: 60px;
+}
+.org--banneradvert h3.atm--banneradvert {
+  color: #413c2d;
+  margin-bottom: 0;
+}
+.org--banneradvert h3.atm--banneradvert a {
+  color: #413c2d;
+  text-decoration: underline;
 }
 
 .org--block-default {
