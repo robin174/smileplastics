@@ -18,11 +18,7 @@
 	}
 }
 
-.mol--repeater-text {
-	&:last-child {
-		margin-top: $margin--general;
-	}
-}
+
 
 
 .ut--block-margin {
@@ -32,5 +28,12 @@
 @media(min-width: $media-tablet) {
 	.ut--block-margin {
 		margin-bottom: $margin--large;
+	}
+}
+
+
+.mol--repeater-text {
+	&:last-child {
+		margin-top: $margin--general;
 	}
 }

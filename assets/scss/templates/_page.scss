@@ -1,6 +1,5 @@
 .org--hero-page {
 	background-color: $color--bg-light;
-	margin-bottom: $margin--small;
 	line-height:1;
 	padding:0;
 	.mol--hero-page {
@@ -26,8 +25,4 @@
 	}
 }
 
-@media (min-width: $media-tablet) {
-	.org--hero-page {
-		margin-bottom: $margin--large;
-	}
-}
+.org--page-builder {}

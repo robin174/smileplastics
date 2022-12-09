@@ -555,10 +555,6 @@ footer figure.iso-certification figcaption.iso-details {
     margin-right: 4rem;
   }
 }
-.mol--repeater-text:last-child {
-  margin-top: 2rem;
-}
-
 .ut--block-margin {
   margin-bottom: 1rem;
 }
@@ -568,9 +564,12 @@ footer figure.iso-certification figcaption.iso-details {
     margin-bottom: 4rem;
   }
 }
+.mol--repeater-text:last-child {
+  margin-top: 2rem;
+}
+
 .org--hero-page {
   background-color: #f7f7f7;
-  margin-bottom: 1rem;
   line-height: 1;
   padding: 0;
 }
@@ -593,11 +592,6 @@ footer figure.iso-certification figcaption.iso-details {
   color: #fff;
 }
 
-@media (min-width: 768px) {
-  .org--hero-page {
-    margin-bottom: 4rem;
-  }
-}
 .org--hero-material {
   background-color: rgba(230, 230, 230, 0.5);
 }
@@ -910,9 +904,6 @@ footer figure.iso-certification figcaption.iso-details {
   .org--block-default {
     margin-bottom: 4rem;
   }
-}
-.org--blockquote-brand {
-  margin-top: 8rem;
 }
 .org--blockquote-brand .org--blockquote-brand-inner {
   padding: 4rem;
