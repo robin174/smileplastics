@@ -7,7 +7,7 @@ get_header(); ?>
 
 <section class="templ--single-page mol--page-main">
 	<?php get_template_part('template-parts/header-hero'); ?>
-xx
+	
 	<div class="container">
 		<div class="row g-0 d-flex">
 			<div class="col-12">

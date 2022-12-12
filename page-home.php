@@ -6,12 +6,11 @@
 get_header(); ?>
 
 	<section class="templ--single-page mol--page-main">
-
 		<!-- Homepage Hero: Full width -->
 		<?php get_template_part('template-parts/header-hero'); ?>
 
-		<!-- Homepage Introduction -->
-		<?php get_template_part('template-parts/homepage-introduction'); ?>
+		<!-- Page Introduction -->
+		<?php get_template_part('template-parts/page-introduction'); ?>
 
 		<!-- Page Builder -->
 		<?php get_template_part ('template-parts/all-page-builder'); ?>

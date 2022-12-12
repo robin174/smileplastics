@@ -7,6 +7,8 @@ get_header(); ?>
 
 <section class="templ--single-page mol--page-main">		
 	<?php get_template_part('template-parts/header-hero'); ?>
+
+	<?php get_template_part('template-parts/page-introduction'); ?>
 				
 	<?php get_template_part('template-parts/block-default'); ?>
 
