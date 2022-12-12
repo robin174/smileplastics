@@ -49,19 +49,19 @@
                    			<figure>
 								<img class="logo-brand" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smileplastics-white.svg" alt="Logo - Smile Plastics">
 							</figure>
-                   			<p>24 Crofty Industrial Estate, Penclawdd, Swansea SA4 3RS, Wales<br>
-							VAT number: GB 993382379<br>
-							Company number: 07415382</p>
+                   			<p><?php the_field('footer_address', 'options'); ?><br>
+							VAT number: <?php the_field('footer_company_number', 'options'); ?><br>
+							Company number: <?php the_field('footer_vat_number', 'options'); ?></p>
                             <div style="margin-top: 24px;margin-bottom: 20px;">
                                 <figure class="iso-certification">
                                     <img class="logo-iso" src="<?php echo get_template_directory_uri(); ?>/assets/images/UKAS-ISOQAR-Mark-cl-27_Mono-inverse.svg" alt="Logo - Smile Plastics">
                                     <figcaption class="iso-details">
-                                        Certificate Number 19268<br>
-                                        ISO 9001, ISO 14001
+                                        <?php the_field('footer_certificate_number', 'options'); ?><br>
+                                         <?php the_field('footer_iso_number', 'options'); ?>
                                     </figcaption>
                                 </figure>
                             </div>
-							<p class="copyright">&copy;&nbsp;<?php echo date('Y'); ?>. All rights reserved. Re-worked Ltd, TA Smile Plastics</p>
+							<p class="copyright">&copy;&nbsp;<?php echo date('Y'); ?>.&nbsp;<?php the_field('footer_copyright', 'options'); ?></p>
                    		</section>
                     </div>
                 </div>  
