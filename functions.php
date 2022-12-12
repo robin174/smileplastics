@@ -41,25 +41,26 @@ if( function_exists('acf_add_options_page') ) {
         'icon_url'      => 'dashicons-admin-site-alt',
         'redirect'      => true
     ));
-
     acf_add_options_sub_page(array(
         'page_title'    => 'General Settings',
         'menu_title'    => 'General Settings',
         'parent_slug'   => 'additional-site-settings',
     ));
-
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Stats',
+        'menu_title'    => 'Stats',
+        'parent_slug'   => 'additional-site-settings',
+    ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Banner Advert',
         'menu_title'    => 'Banner Advert',
         'parent_slug'   => 'additional-site-settings',
     ));
-
     acf_add_options_sub_page(array(
         'page_title'    => 'Newsletter Content',
         'menu_title'    => 'Newsletter Content',
         'parent_slug'   => 'additional-site-settings',
     ));
-
     acf_add_options_sub_page(array(
         'page_title'    => 'Footer Content',
         'menu_title'    => 'Footer Content',
