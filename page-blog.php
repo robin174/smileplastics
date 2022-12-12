@@ -44,6 +44,8 @@ get_header(); ?>
 		</div>
 	</div>
 
+
+	<!-- To add to the ACF, on post content -->
 	<div class="container">
 		<div class="row g-0 justify-content-center">
 			<div class="col-12 col-md-9 d-flex" style="background-color: #e6e6e6;">

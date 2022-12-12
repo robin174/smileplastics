@@ -34,7 +34,7 @@ add_action( 'wp_enqueue_scripts', 'smileplastics_scripts' );
 // ACF Options
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
-        'menu_title'    => 'Additional Settings',
+        'menu_title'    => 'Additional',
         'menu_slug'     => 'additional-site-settings',
         'parent_slug'   => '',
         'capability'    => 'edit_posts',

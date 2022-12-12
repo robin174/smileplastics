@@ -1,5 +1,5 @@
 <!-- All Page Builder -->
-<?php while(has_sub_field("hpg_page_builder")): ?>
+<?php while(has_sub_field('hpg_page_builder')): ?>
 	<section class="org--page-builder ut--block-margin">
 
 		<?php if(get_row_layout() == 'hpg_50-50'): ?>
