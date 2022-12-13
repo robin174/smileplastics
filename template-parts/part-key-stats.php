@@ -4,7 +4,7 @@
 
 			<?php if( have_rows('stats_repeater', 'options') ): ?>
 				<?php while( have_rows('stats_repeater', 'options') ) : the_row(); ?>
-					<div class="col-6 col-lg-4">
+					<div class="col-12 col-md-4">
 						<div class="mol--stat d-flex flex-column align-items-center">
 							<div class="atm--stat-icon d-flex justify-content-center">
 								<?php the_sub_field('stats_icon_code', 'options'); ?>
