@@ -149,6 +149,7 @@ button, a.button {
   font-family: "UntitledSans-Regular", Arial, Helvetica, sans-serif;
   color: #413c2d;
   text-decoration: none;
+  display: inline-block;
 }
 button i, a.button i {
   transition: 0.3s;
@@ -188,7 +189,7 @@ figure {
   position: relative;
 }
 figure figcaption {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   line-height: 1.1;
   padding: 0;
   margin-top: 7px;
@@ -238,6 +239,11 @@ figure figcaption.atm--fc-overlaydark.atm--fc-left {
 }
 figure figcaption.atm--fc-overlaydark.atm--fc-right {
   right: 0;
+}
+@media (min-width: 768px) {
+  figure figcaption {
+    font-size: 0.85rem;
+  }
 }
 @media (min-width: 992px) {
   .atm--fc-rotated {
@@ -581,17 +587,34 @@ footer figure.iso-certification figcaption.iso-details {
   transform: translate(0, -50%);
   background-color: rgba(65, 60, 45, 0.7);
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
 }
 .org--hero-page .mol--hero-overlay h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
   color: #fff;
 }
 .org--hero-page .mol--hero-overlay h4 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .org--hero-page .mol--hero-overlay {
+    padding: 2rem;
+  }
+  .org--hero-page .mol--hero-overlay h2 {
+    font-size: 4rem;
+    color: #fff;
+  }
+  .org--hero-page .mol--hero-overlay h4 {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+}
 .org--hero-material {
   background-color: rgba(230, 230, 230, 0.5);
 }
@@ -912,16 +935,20 @@ footer figure.iso-certification figcaption.iso-details {
   margin-top: 0;
 }
 
-.org--introduction-home {
-  padding: 0 2rem;
-  margin-bottom: 4rem;
+.org--introduction-page {
+  padding: 2rem 2rem;
   text-align: center;
 }
-.org--introduction-home p {
+.org--introduction-page p {
   font-size: 1.6rem;
   margin: 30px;
 }
 
+@media (min-width: 768px) {
+  .org--introduction-page {
+    padding: 0 2rem;
+  }
+}
 .org--newsletter {
   color: #fff;
   background-color: #383427;

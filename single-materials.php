@@ -43,7 +43,7 @@ get_header(); ?>
 							<?php the_field('hm_mat_desc');?>
 						</div>
 						<?php if (get_field('hm_cta_button')): ?>
-							<div class="atm--button-cta d-flex">
+							<div class="atm--button-cta">
 								<a class="button button-cta" href="<?php the_field('hm_cta_link');?>">Shop <?php the_title();?> Samples<i class="far fa-long-arrow-right"></i></a>
 							</div>
 						<?php endif; ?>

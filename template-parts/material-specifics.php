@@ -81,7 +81,7 @@
 						<?php if (get_field('panel_cta_add')): ?>
 							<?php if( have_rows('panel_button') ): ?>
 								<?php while( have_rows('panel_button') ): the_row(); ?>
-									<div class="atm--button-cta d-flex">
+									<div class="atm--button-cta">
 										<a class="button button-cta" href="<?php the_sub_field('panel_button_link'); ?>"><?php the_sub_field('panel_button_command'); ?><i class="far fa-long-arrow-right"></i></a>
 									</div>
 								<?php endwhile; ?>		

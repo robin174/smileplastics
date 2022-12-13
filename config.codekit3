@@ -892,21 +892,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/templates\/_homepage-introduction.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_homepage-introduction.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/assets\/scss\/templates\/_key-stats.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -962,6 +947,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/css\/_newsletter.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/templates\/_page-introduction.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_page-introduction.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1329,14 +1329,6 @@
       "oAP" : "\/template-parts\/header-hero.php",
       "oF" : 0
     },
-    "\/template-parts\/homepage-introduction.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/homepage-introduction.php",
-      "oF" : 0
-    },
     "\/template-parts\/material-specifics.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1375,6 +1367,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/newsletter.php",
+      "oF" : 0
+    },
+    "\/template-parts\/page-introduction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/page-introduction.php",
       "oF" : 0
     },
     "\/template-parts\/part-blockquote.php" : {

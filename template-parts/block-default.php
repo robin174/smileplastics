@@ -43,7 +43,7 @@
 											<h3><?php the_sub_field('halfb_title')?></h3>
 											<?php the_sub_field('halfb_text')?>
 											<?php if (get_sub_field('halfb_button_add')): ?>
-												<div class="atm--button-cta d-flex">
+												<div class="atm--button-cta">
 													<a class="button button-cta" href="<?php the_sub_field('halfb_button_link'); ?>"><?php the_sub_field('halfb_button_command'); ?><i class="far fa-long-arrow-right"></i></a>
 												</div>
 											<?php endif; ?>
@@ -68,7 +68,7 @@
 											<h3><?php the_sub_field('halfb_title')?></h3>
 											<?php the_sub_field('halfb_text')?>
 											<?php if (get_sub_field('halfb_button_add')): ?>
-												<div class="atm--button-cta d-flex">
+												<div class="atm--button-cta">
 													<a class="button button-cta" href="<?php the_sub_field('halfb_button_link'); ?>"><?php the_sub_field('halfb_button_command'); ?><i class="far fa-long-arrow-right"></i></a>
 												</div>
 											<?php endif; ?>

@@ -16,7 +16,7 @@
 					<!-- convert into template part... and add an if statement to the template... if x, else y -->
 					<div class="text-center">
 						<blockquote>&ldquo;Smile Plastics’ values very much mirror our own, and its materials – made of would-be waste – contribute to our zero-waste mission, while also being incredibly beautiful.&rdquo;<cite>&mdash;&nbsp;designer, Nina Woodcroft, MONC Eyewear</cite></blockquote>
-						<div class="atm--button-cta d-flex justify-content-center">
+						<div class="atm--button-cta">
 							<a class="button button-cta" href="#">See our latest projects<i class="far fa-long-arrow-right"></i></a>
 						</div>
 					</div>

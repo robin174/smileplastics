@@ -43,7 +43,7 @@
 										<?php get_template_part('template-parts/part-blockquote'); ?>
 									<?php } ?>
 									<?php if (get_sub_field('halfp_cta')): ?>
-										<div class="atm--button-cta d-flex">
+										<div class="atm--button-cta">
 											<a class="button button-cta" href="<?php the_sub_field('halfp_cta_cta_link'); ?>"><?php the_sub_field('halfp_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
 										</div>
 									<?php endif; ?>
@@ -60,7 +60,7 @@
 										<?php get_template_part('template-parts/part-blockquote'); ?>
 									<?php } ?>
 									<?php if (get_sub_field('halfp_cta')): ?>
-										<div class="atm--button-cta d-flex">
+										<div class="atm--button-cta">
 											<a class="button button-cta" href="<?php the_sub_field('halfp_cta_cta_link'); ?>"><?php the_sub_field('halfp_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
 										</div>
 									<?php endif; ?>

@@ -6,7 +6,8 @@
 get_header(); ?>
 
 	<section class="templ--single-page mol--page-main">
-		<!-- Homepage Hero: Full width -->
+
+		<!-- Homepage Hero -->
 		<?php get_template_part('template-parts/header-hero'); ?>
 
 		<!-- Page Introduction -->

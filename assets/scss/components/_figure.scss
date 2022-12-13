@@ -21,7 +21,7 @@ figure {
 	padding: 0;
 	position: relative;
 	& figcaption {
-		font-size: 0.85rem;
+		font-size: 0.75rem;
 		line-height: 1.1;
 		padding: 0;
 		margin-top: 7px;
@@ -65,6 +65,14 @@ figure {
 		}
 		&.atm--fc-rotated {
 			// No styles as resets to default until @media desktop
+		}
+	}
+}
+
+@media (min-width: $media-tablet) {
+	figure {
+		& figcaption {
+			font-size: 0.85rem;
 		}
 	}
 }

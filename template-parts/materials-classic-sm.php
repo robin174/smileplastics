@@ -13,7 +13,7 @@
 		        $my_query = new WP_Query($args);
 		        if( $my_query->have_posts() ) {
 		        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-		        	<div class="col-3 col-lg">
+		        	<div class="col-6 col-md-4 col-lg">
 		        		<!-- Put a gradient over the top, Barkers style? --> 
 		        		<?php if( get_field('mat_contrast') == 'light' ) { ?>
 			        		<div class="atm--relative atm--contrast-light">

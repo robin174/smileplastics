@@ -1,0 +1,15 @@
+.org--introduction-page {
+	padding: $padding--general $padding--general;
+	text-align: center;
+	& h1 {}
+	& p {
+		font-size: 1.6rem;
+		margin:30px;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--introduction-page {
+		padding: 0 $padding--general;
+	}
+}
