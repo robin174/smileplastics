@@ -650,6 +650,7 @@ footer figure.iso-certification figcaption.iso-details {
 
 @media (min-width: 768px) {
   .org--pattern-material .mol--pattern-intro {
+    border-bottom: none;
     margin-top: 0;
   }
 }

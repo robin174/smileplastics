@@ -35,6 +35,7 @@
 @media(min-width: $media-tablet) {
 	.org--pattern-material {
 		& .mol--pattern-intro {
+			border-bottom: none;
 			margin-top: 0;
 		}
 	}
