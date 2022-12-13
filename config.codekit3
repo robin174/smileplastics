@@ -1417,14 +1417,6 @@
       "oAP" : "\/template-parts\/part-slider.php",
       "oF" : 0
     },
-    "\/template-parts\/part-title.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/part-title.php",
-      "oF" : 0
-    },
     "\/template-parts\/repeater-panel-sizes.php" : {
       "cB" : 0,
       "ft" : 8192,

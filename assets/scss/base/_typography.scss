@@ -25,6 +25,14 @@ a {
 	}
 }
 
+h1 {
+	&.atm--template-title {
+		margin-top: $margin--general;
+		margin-bottom: $margin--general;
+		text-align: center;
+	}
+}
+
 h2 {
 	font-size: 4rem;
 }

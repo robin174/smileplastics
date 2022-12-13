@@ -76,6 +76,12 @@ a:hover {
   color: #050403;
 }
 
+h1.atm--template-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 h2 {
   font-size: 4rem;
 }
