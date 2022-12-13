@@ -63,9 +63,11 @@
 									<video class="mw-100" src="<?php the_sub_field('hdn_video_file'); ?>" autoplay loop playsinline muted></video>
 								</div>
 							<?php } elseif(get_sub_field('hdn_video_type') == 'videovimeo' ) { ?>
-								<div class="embed-responsive embed-responsive-16by9">
-									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/<?php the_sub_field('hdn_vimeo_file_id'); ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="height:800px;width:100%;"></iframe>
-									<script src="https://player.vimeo.com/api/player.js"></script>
+								<div class="container">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/<?php the_sub_field('hdn_vimeo_file_id'); ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="height:800px;width:100%;"></iframe>
+										<script src="https://player.vimeo.com/api/player.js"></script>
+									</div>
 								</div>
 							<?php } ?>
 						<?php endwhile; ?>
