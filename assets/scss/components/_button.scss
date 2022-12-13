@@ -6,6 +6,7 @@ button, a.button {
 	font-size: 1rem;
 	font-family: $brand--font-reg;
 	color: $color--primary;
+	text-transform: capitalize;
 	text-decoration: none;
 	display: inline-block;
 	& i {

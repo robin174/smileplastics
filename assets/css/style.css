@@ -148,6 +148,7 @@ button, a.button {
   font-size: 1rem;
   font-family: "UntitledSans-Regular", Arial, Helvetica, sans-serif;
   color: #413c2d;
+  text-transform: capitalize;
   text-decoration: none;
   display: inline-block;
 }
