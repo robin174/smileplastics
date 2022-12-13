@@ -147,10 +147,21 @@
 
 		<?php if(get_row_layout() == 'hpg_block_template'): ?>
 			<?php if( get_sub_field('whole_template_select') == 'materialssmall' ) { ?>
+				<?php if(get_sub_field('whole_template_title')) { ?>
+					<h1><?php the_sub_field('whole_template_title') ?></h1>
+				<?php endif; ?>
 				<?php get_template_part('template-parts/materials-classic-sm'); ?>
 			<?php } elseif( get_sub_field('whole_template_select') == 'materialslarge' ) { ?>
+				<?php if(get_sub_field('whole_template_title')) { ?>
+					<h1><?php the_sub_field('whole_template_title') ?></h1>
+				<?php endif; ?>
 				<?php get_template_part('template-parts/materials-classic-lg'); ?>
-			<?php } ?>	
+			<?php } elseif( get_sub_field('whole_template_select') == 'keystats' ) { ?>
+				<?php if(get_sub_field('whole_template_title')) { ?>
+					<h1><?php the_sub_field('whole_template_title') ?></h1>
+				<?php endif; ?>
+				<?php get_template_part('template-parts/part-key-stats'); ?>
+			<?php } ?>
 		<?php endif; ?>
 
 	</section>
