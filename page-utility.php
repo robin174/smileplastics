@@ -17,8 +17,6 @@ get_header(); ?>
 	<?php get_template_part('template-parts/block-default'); ?>
 
 	<?php if(is_page('panels')) : ?>
-		<?php get_template_part('template-parts/part-key-stats'); ?>
-		<?php get_template_part('template-parts/materials-classic-lg'); ?>
 		<?php get_template_part('template-parts/material-specifics'); ?>
 	<?php endif; ?>
 
