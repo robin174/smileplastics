@@ -1,8 +1,22 @@
 .org--blockquote-brand {
 	& .org--blockquote-brand-inner {
-		padding: $padding--large;
+		padding: $padding--general $padding--small;
+		& blockquote {
+			font-size: 1.3rem;
+		}
 	}
 	& .atm--button-cta {
 		margin-top:0;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--blockquote-brand {
+		&.org--blockquote-brand-inner {
+			padding: $padding--large;
+			& blockquote {
+				font-size: 1.6rem;
+			}
+		}
 	}
 }
