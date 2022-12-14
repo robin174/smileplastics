@@ -943,17 +943,20 @@ footer figure.iso-certification figcaption.iso-details {
 }
 
 .org--introduction-page {
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   text-align: center;
 }
-.org--introduction-page p {
-  font-size: 1.6rem;
-  margin: 30px;
+.org--introduction-page p.atm--introduction {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .org--introduction-page {
     padding: 0 2rem;
+  }
+  .org--introduction-page p.atm--introduction {
+    font-size: 1.6rem;
   }
 }
 .org--newsletter {
