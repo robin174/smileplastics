@@ -10,8 +10,8 @@
 	</figure></div> 
 	*/ ?>
 	<div class="d-flex flex-column justify-content-between mol--material-card">
-		<h4><?php echo strip_tags(get_the_term_list( $post->ID, 'collection', ' ',', ')); ?></h4>
-		<h3 style="position:relative"><?php the_title(); ?></h3>
+		<h3><?php the_title(); ?></h3>
+		<h4 style="position:relative"><?php echo strip_tags(get_the_term_list( $post->ID, 'collection', ' ',', ')); ?></h4>
 		<div class="d-flex flex-column text-center">
 			<h5>Thickness</h5>
 			<ul>

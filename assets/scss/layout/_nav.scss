@@ -43,7 +43,8 @@ nav {
 	}
 	& li.menu-item {
 		transition: $base-transition;
-		padding: 5px $padding--general*0.5;
+		padding: 5px 0;
+		padding-left: 10px;
 		&:hover {
 			text-decoration: underline;
 		}

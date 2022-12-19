@@ -1,6 +1,6 @@
 <section class="org--materials-display-sm">
 	<div class="container">
-		<div class="row g-0">
+		<div class="row g-3 g-lg-0 gx-lg-3">
 			<?php
 		        $args=array(
 		            'post_type' => 'materials',

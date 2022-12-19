@@ -20,20 +20,21 @@
 	margin-bottom: $margin--small;
 	& .mol--material-card {
 		padding: $padding--small*0.5;
-    	& h3 {
+		& h3 {
     		color:unset; // determined by the contrast class
     		margin: 0;
     		padding: 0;
-    		position: relative;
-    		writing-mode: vertical-rl;
-    		line-height: 1;
-    		font-size: 1.4rem;
+    		font-family: $brand--stencil-reg;
+    		font-size: 1.3rem;
     	}
     	& h4 {
     		color:unset; // determined by the contrast class
     		margin: 0;
     		padding: 0;
+    		position: relative;
+    		writing-mode: vertical-rl;
     		font-family: $brand--stencil-reg;
+    		line-height: 1;
     		font-size: 1.1rem;
     	}
     	& h5 {
@@ -69,7 +70,7 @@
 		& .mol--material-card {
 			padding: $padding--small;
 	    	& h3 {
-	    		font-size: 1.8rem;
+	    		font-size: 1.6rem;
 	    	}
 	    	& h4 {
     			font-size: 1.2rem;
@@ -82,7 +83,7 @@
 	.org--materials-display-lg {
 		& .mol--material-card {
 	    	& h3 {
-	    		font-size: 2rem;
+	    		font-size: 1.9rem;
 	    	}
 	    	& h4 {
     			font-size: 1.4rem;

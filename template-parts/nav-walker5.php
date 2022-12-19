@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<?php if ( is_front_page() && is_home() ) : ?>
 		<figure>
 			<img class="logo-brand" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smileplastics-dark.svg" alt="Logo - Smile Plastics">
