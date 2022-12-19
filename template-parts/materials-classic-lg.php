@@ -4,7 +4,7 @@
 			<?php
 		        $args=array(
 		            'post_type' => 'materials',
-		            'collection' => 'classic',
+		            'collection' => 'classics',
 		            'post_status' => 'publish',
 		            'order' => 'asc',
 		            'orderby' => 'menu_order'
