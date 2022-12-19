@@ -616,6 +616,11 @@ footer figure.iso-certification figcaption.iso-details {
   color: #fff;
 }
 
+.org--page-builder p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
 @media (min-width: 768px) {
   .org--hero-page .mol--hero-overlay {
     padding: 2rem;

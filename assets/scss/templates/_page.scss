@@ -29,7 +29,12 @@
 	}
 }
 
-.org--page-builder {}
+.org--page-builder {
+	& p {
+		font-size: 1.1rem;
+    	line-height: 1.5;
+	}
+}
 
 
 @media (min-width: $media-tablet) {
