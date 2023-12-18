@@ -186,25 +186,25 @@
 			<?php } ?>
 		<?php endif; ?>
 
-
-
-
-		<!-- TODO: NEW TO CLEAN-UP -->
 		<?php if(get_row_layout() == 'hpg_block_fulltext'): ?>
 			<div class="container">
 				<div class="row g-0 justify-content-center">
-					<div class="col-12 col-md-9"><!-- check if this is 12 and not 10? -->
-						<div><p class="ut--lg" style="font-size: 3rem; text-align: center; line-height: 1.2;margin-bottom: 0;"><?php the_sub_field('hpg_text_full');?></p>
-							<!-- <p class="ut--lg" >Full text block as per https://haeckels.co.uk</p> -->
-							</div>
+					<div class="col-12 col-md-9">
+						<div>
+						<?php if( get_sub_field('hpg_text_align') == 'aligncenter') { ?>
+							<div class="text-center">
+						<?php } elseif( get_sub_field('hpg_text_align') == 'alignleft') { ?>
+							<div>
+						<?php } ?>
+							<p class="atm--text-fullwidth" style="font-size: 3rem;line-height: 1.2;margin-bottom: 0;"><?php the_sub_field('hpg_text_full');?></p>
+							<?php if(get_sub_field('hpg_text_cite')): ?>
+								<p class="atm--text-cite"><?php the_sub_field('hpg_text_cite');?></p>
+							<?php endif; ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		<?php endif; ?>
-
-
-
-
 
 		<?php if(get_row_layout() == 'hpg_block_video'): ?>
 			<?php if( get_sub_field('hpg_video_bg')) { ?>

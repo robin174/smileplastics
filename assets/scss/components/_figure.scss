@@ -49,6 +49,12 @@ figure {
 			// No styles as resets to default until @media desktop
 		}
 	}
+	&.atm--repeater-logo {
+		& img {	
+			padding-bottom: $padding--general*0.75;
+			max-width: 70px;
+		}
+	}
 }
 
 @media (min-width: $media-tablet) {

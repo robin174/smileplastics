@@ -246,6 +246,9 @@ figure {
         left: 0; }
       figure figcaption.atm--fc-overlaydark.atm--fc-right {
         right: 0; }
+  figure.atm--repeater-logo img {
+    padding-bottom: 1.5rem;
+    max-width: 70px; }
 
 @media (min-width: 768px) {
   figure figcaption {
@@ -458,6 +461,16 @@ section[class^="templ--single"] {
   margin: 1rem 0;
   font-size: 0.8rem;
   line-height: 1.5; }
+
+.atm--text-fullwidth {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 0; }
+
+.atm--text-cite {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 0; }
 
 footer {
   background-color: #413c2d;
