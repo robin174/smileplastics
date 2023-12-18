@@ -3,7 +3,7 @@
 		<div class="row justify-content-center">
 			<div class="col-11 col-md-10 col-lg-8">
 
-				<h1 class="text-center">Who we have worked with</h1>
+				<h1 class="text-center"><?php the_field('workedwith_title','options'); ?></h1>
 
 				<?php if( have_rows('workedwith_repeater', 'options') ): ?>
 					<?php while( have_rows('workedwith_repeater', 'options') ) : the_row(); ?>
