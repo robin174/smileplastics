@@ -17,6 +17,10 @@ section[class^="templ--single"] {
 	margin-bottom: $margin--general;
 }
 
+.mol--fulltext {
+	padding: $padding--general;
+}
+
 .atm--contact {
 	margin-bottom: 20px;
 	padding-bottom: 60px;
@@ -65,13 +69,23 @@ section[class^="templ--single"] {
 	line-height: 1.5;
 }
 
-.atm--text-fullwidth {
-	font-size: 3rem;
-	line-height: 1.2;
-	margin-bottom: 0;
+.mol--fulltext {
+	& p.atm--text-fullwidth {
+		font-size: 2.2rem;
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+	& p.atm--text-cite {
+		font-size: 1.2rem;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
 }
-.atm--text-cite {
-	font-size: 1.2rem;
-	margin-top: 10px;
-	margin-bottom: 0;
+
+@media (min-width: $media-desktop) {
+	.mol--fulltext {
+		& p.atm--text-fullwidth {
+			font-size: 3rem;
+		}
+	}
 }

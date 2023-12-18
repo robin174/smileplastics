@@ -424,6 +424,9 @@ section[class^="templ--single"] {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
+.mol--fulltext {
+  padding: 2rem; }
+
 .atm--contact {
   margin-bottom: 20px;
   padding-bottom: 60px;
@@ -462,15 +465,19 @@ section[class^="templ--single"] {
   font-size: 0.8rem;
   line-height: 1.5; }
 
-.atm--text-fullwidth {
-  font-size: 3rem;
+.mol--fulltext p.atm--text-fullwidth {
+  font-size: 2.2rem;
   line-height: 1.2;
   margin-bottom: 0; }
 
-.atm--text-cite {
+.mol--fulltext p.atm--text-cite {
   font-size: 1.2rem;
   margin-top: 10px;
   margin-bottom: 0; }
+
+@media (min-width: 992px) {
+  .mol--fulltext p.atm--text-fullwidth {
+    font-size: 3rem; } }
 
 footer {
   background-color: #413c2d;
@@ -634,7 +641,6 @@ footer {
       .org--hero-page .mol--hero-overlay .button-cta:hover {
         background-color: #322e23; }
 
-mol--hero-overlay
 .org--page-builder p {
   font-size: 1.1rem;
   line-height: 1.5; }

@@ -190,17 +190,17 @@
 			<div class="container">
 				<div class="row g-0 justify-content-center">
 					<div class="col-12 col-md-9">
-						<div>
-						<?php if( get_sub_field('hpg_text_align') == 'aligncenter') { ?>
-							<div class="text-center">
-						<?php } elseif( get_sub_field('hpg_text_align') == 'alignleft') { ?>
-							<div>
-						<?php } ?>
-							<p class="atm--text-fullwidth" style="font-size: 3rem;line-height: 1.2;margin-bottom: 0;"><?php the_sub_field('hpg_text_full');?></p>
-							<?php if(get_sub_field('hpg_text_cite')): ?>
-								<p class="atm--text-cite"><?php the_sub_field('hpg_text_cite');?></p>
-							<?php endif; ?>
-						</div>
+						<section class="mol--fulltext">
+							<?php if( get_sub_field('hpg_text_align') == 'aligncenter') { ?>
+								<div class="text-center">
+							<?php } elseif( get_sub_field('hpg_text_align') == 'alignleft') { ?>
+								<div>
+							<?php } ?>
+								<p class="atm--text-fullwidth"><?php the_sub_field('hpg_text_full');?></p>
+								<?php if(get_sub_field('hpg_text_cite')): ?>
+									<p class="atm--text-cite"><?php the_sub_field('hpg_text_cite');?></p>
+								<?php endif; ?>
+						</section>
 					</div>
 				</div>
 			</div>
