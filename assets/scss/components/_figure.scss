@@ -1,0 +1,107 @@
+figure {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	& figcaption {
+		font-size: 0.7rem;
+		line-height: 1.1;
+		padding: 0;
+		margin-top: 7px;
+		margin-bottom: 15px;
+		margin-left: 5px;
+		font-family: $brand--font-reg;
+		color: rgba($color--primary, 0.7);
+		& i {
+			margin-right: 7px;
+		}
+		&.atm--fc-default {
+			color: rgba($color--primary, 0.7);
+			&.atm--fc-left {
+				text-align: left;
+			}
+			&.atm--fc-right {
+				text-align: right;
+			}
+		}
+		&.atm--fc-overlaylight {
+			@include figcaptionOverlay;
+			background-color: rgba($color--white, 0.5);
+			color: $color--primary;
+			&.atm--fc-left {
+				left: 0;
+			}
+			&.atm--fc-right {
+				right: 0;
+			}
+		}
+		&.atm--fc-overlaydark {
+			@include figcaptionOverlay;
+			background-color: rgba($color--primary, 0.5);
+			color: $color--secondary;
+			&.atm--fc-left {
+				left: 0;
+			}
+			&.atm--fc-right {
+				right: 0;
+			}
+		}
+		&.atm--fc-rotated {
+			// No styles as resets to default until @media desktop
+		}
+	}
+}
+
+@media (min-width: $media-tablet) {
+	figure {
+		& figcaption {
+			font-size: 0.85rem;
+		}
+	}
+}
+
+@media (min-width: $media-desktop) {
+	.atm--fc-rotated {
+		margin: 0;
+		padding: 4px 8px;
+		padding-left: 0;
+		position: absolute;
+		left: -26px;
+		/* Rotate from top left corner (not default) */
+		transform-origin: -3px -3px;
+		transform: rotate(-90deg);
+		& i {
+			transform-origin: center;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+// Outside of the figure element (eg. on single posts)
+span.atm--fc-default {
+	font-size: 0.7rem;
+	line-height: 1.1;
+	padding: 0;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	font-family: $brand--font-reg;
+	color: rgba($color--primary, 0.7);
+	& i {
+		margin-right: 7px;
+	}
+}
+
+span.atm--fc-left {
+	display: block;
+	text-align: left;
+}
+
+span.atm--fc-right {
+	display: block;
+	text-align: right;
+}
+
+@media (min-width: $media-tablet) {
+	span.atm--fc-default {
+		font-size: 0.85rem;
+	}
+}

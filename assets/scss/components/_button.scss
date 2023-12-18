@@ -1,0 +1,41 @@
+.atm--button-cta {
+	margin-top: $margin--general;
+}
+
+button, button.button, a.button {
+	font-size: 1rem;
+	font-family: $brand--font-reg;
+	color: $color--primary;
+	text-transform: capitalize;
+	text-decoration: none;
+	display: inline-block;
+	& i {
+		transition: $base-transition;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+
+.text-cta, .button-cta, a.button-cta {
+	font-size: 1rem;
+	transition: $base-transition;
+	background-color: rgba(0,0,0,0.08);
+	border: none;
+	padding: 14px 28px;
+	& i {
+		color: $color--primary;
+		transform: translate(0,2px);
+		margin-left: 12px;
+	}
+	&:hover {
+		//background-color: darken($color--secondary, 5%);
+		background-color: rgba(0,0,0,0.16);
+		& i {
+			transform: translate(12px,2px);
+		}
+	}
+}
+
+// on mobile - have the icon, move back and forth after a delay (if in view), so back and forth every 10 seconds

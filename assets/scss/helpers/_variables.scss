@@ -1,0 +1,97 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$color--primary: #413c2d; // Utility Grey: rgba(65,60,45,1);
+$color--secondary: #e6e6e6; // Off white: rgba(230,230,230,1);
+$color--tertiary: #798d91; // To update
+$color--white: #fff; // white
+$color--black: #000; // black
+
+$color--bg-light: #f7f7f7; // default background color
+
+$color--primary-dark: darken($color--primary, 3%);
+
+$color--highlight-light: $color--secondary;
+$color--highlight-dark: $color--secondary;
+
+$box--shadow-light: 0 0 10px rgba(0,0,0,0.3); 
+$box--shadow-dark: 0 0 10px rgba(0,0,0,0.6); 
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: 'UntitledSans-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/UntitledSans-Regular/UntitledSans-Regular.eot');
+  src: url('../fonts/UntitledSans-Regular/UntitledSans-Regular.eot?#iefix') format("embedded-opentype"),url('../fonts/UntitledSans-Regular/UntitledSans-Regular.woff') format("woff"),url('../fonts/UntitledSans-Regular/UntitledSans-Regular.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: 'UntitledSans-Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/UntitledSans-Medium/UntitledSans-Medium.eot');
+  src: url('../fonts/UntitledSans-Medium/UntitledSans-Medium.eot?#iefix') format("embedded-opentype"),url('../fonts/UntitledSans-Medium/UntitledSans-Medium.woff') format("woff"),url('../fonts/UntitledSans-Medium/UntitledSans-Medium.ttf') format("truetype")
+}
+
+/* Original Stencil font, no accents */
+@font-face {
+  font-family: 'SmilePlasticsStencil-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/SmilePlasticsStencil-Regular/SmilePlasticsStencil-Regular.eot');
+  src: url('../fonts/SmilePlasticsStencil-Regular/SmilePlasticsStencil-Regular.eot?#iefix') format("embedded-opentype"),url('../fonts/SmilePlasticsStencil-Regular/SmilePlasticsStencil-Regular.woff') format("woff"),url('../fonts/SmilePlasticsStencil-Regular/SmilePlasticsStencil-Regular.ttf') format("truetype")
+}
+
+/* Updated Stencil font - July 2023, with accents */
+@font-face {
+  font-family: 'SmilePlasticsStencil-Accent';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/SmilePlasticsStencil-Accent/SmilePlasticsStencil-Regular.eot');
+  src: url('../fonts/SmilePlasticsStencil-Aceent/SmilePlasticsStencil-Regular.eot?#iefix') format("embedded-opentype"),url('../fonts/SmilePlasticsStencil-Accent/SmilePlasticsStencil-Regular.woff') format("woff"),url('../fonts/SmilePlasticsStencil-Accent/SmilePlasticsStencil-Regular.ttf') format("truetype")
+}
+
+$brand--font-reg: 'UntitledSans-Regular', Arial, Helvetica, sans-serif;
+$brand--font-med: 'UntitledSans-Medium', Arial, Helvetica, sans-serif;
+$brand--stencil-reg: 'SmilePlasticsStencil-Accent', Arial, Helvetica, sans-serif;
+
+/* Initial sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*  NOTE. html is set to 62.5% so that all the REM measurements throughout Skeleton are based on 10px sizing. So basically 1.5rem = 15px */
+/*  NOTE. If normal, 100% equals 16px sizing. */
+html {
+  font-size: 100%; 
+}
+
+body {
+  color: $color--primary;
+	font-family: $brand--font-reg;
+	font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
+}
+
+$media-mobile: 576px;
+$media-tablet: 768px;
+$media-desktop: 992px;
+$media-wide: 1200px;
+
+$max-width: 1720px;
+
+$base-transition: 0.3s;
+
+$base-value: 1rem; // To test: rems/ems/px
+
+// Think these need to be made into small, medium, large
+$margin--small: $base-value; // 16px
+$margin--general: $base-value*2; // 32px
+$margin--large: $base-value*4; // 64px
+$margin--xlarge: $base-value*8; // 128px
+
+$padding--small: $base-value; // 16px
+$padding--general: $base-value*2; // 32px
+$padding--large: $base-value*4; // 64px
+$padding--xlarge: $base-value*8; // 128px
+
+
+
+

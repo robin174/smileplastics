@@ -1,0 +1,50 @@
+.mol--page-product {
+	padding: $padding--small 0;
+}
+
+.woocommerce div.product div.images {
+	float: unset;
+	width: 100%;
+	margin: 0;
+}
+
+.woocommerce div.product div.summary {
+	float: unset;
+	width: 100%;
+	padding: 30px;
+	& h1 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	.prod__add_inform {
+		& h4 {
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			font-family: $brand--font-med;
+		}
+		& strong {
+			font-family: $brand--font-med;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.mol--page-product {
+		padding: $padding--general 0;
+	}
+	.woocommerce div.product div.summary {
+		padding: unset;
+		padding-top: 60px;
+		& h1 {
+			font-size: 26px;
+			margin-bottom: 15px;
+		}
+		& .woocommerce-product-details__short-description {
+			margin: $margin--general 0;
+			& p {
+				font-size: 1rem;
+				line-height: 1.4;
+			}
+		}
+	}
+}

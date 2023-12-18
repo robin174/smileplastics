@@ -1,0 +1,72 @@
+// Add typography from https://simplecss.org/
+
+// Font: Untitled-Regular, -Medium, 
+// Font: SmilePlasticsStencil-Regular
+
+
+h1, h2, h3 {
+	font-family: $brand--stencil-reg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color--primary;
+}
+
+p, li {
+	font-family: $brand--font-reg;
+	color: $color--primary;
+}
+
+p.ut--lg {
+	font-size: 2rem;
+	line-height: 1; 
+	font-family: $brand--font-reg;
+	color: $color--primary;
+}
+
+a {
+	transition: $base-transition;
+	color: $color--primary;
+	&:hover {
+		color: darken($color--primary, 20%);
+	}
+}
+
+h1 {
+	&.atm--template-title {
+		margin-top: $margin--xlarge;
+		margin-bottom: $margin--general;
+		text-align: center;
+	}
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+	margin-bottom:18px;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+.ut--uc {
+	@include headingUC;
+}
+
+.mol--page-main {
+	& p {
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
+}
+
+strong {}
+
+.title-indent {
+	//margin-left: $margin--general*2;
+	margin-bottom: $margin--general!important;
+}

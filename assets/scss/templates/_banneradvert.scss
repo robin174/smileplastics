@@ -1,0 +1,13 @@
+.org--banneradvert {
+	color: $color--primary;
+	background-color:#e6e6e6;
+	padding:12px 0;
+	& h3.atm--banneradvert {
+		color: $color--primary;
+		margin-bottom: 0;
+		& a {
+			color: $color--primary;
+			text-decoration: underline;
+		}
+	}
+}
