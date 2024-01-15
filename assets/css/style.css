@@ -424,9 +424,6 @@ section[class^="templ--single"] {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.mol--fulltext {
-  padding: 2rem; }
-
 .atm--contact {
   margin-bottom: 20px;
   padding-bottom: 60px;
@@ -465,6 +462,9 @@ section[class^="templ--single"] {
   font-size: 0.8rem;
   line-height: 1.5; }
 
+.mol--fulltext {
+  padding: 2rem 1rem; }
+
 .mol--fulltext p.atm--text-fullwidth {
   font-size: 2.2rem;
   line-height: 1.2;
@@ -476,8 +476,10 @@ section[class^="templ--single"] {
   margin-bottom: 0; }
 
 @media (min-width: 992px) {
-  .mol--fulltext p.atm--text-fullwidth {
-    font-size: 3rem; } }
+  .mol--fulltext {
+    padding: 3rem 2rem; }
+    .mol--fulltext p.atm--text-fullwidth {
+      font-size: 3rem; } }
 
 footer {
   background-color: #413c2d;

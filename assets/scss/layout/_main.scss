@@ -17,10 +17,6 @@ section[class^="templ--single"] {
 	margin-bottom: $margin--general;
 }
 
-.mol--fulltext {
-	padding: $padding--general;
-}
-
 .atm--contact {
 	margin-bottom: 20px;
 	padding-bottom: 60px;
@@ -70,6 +66,10 @@ section[class^="templ--single"] {
 }
 
 .mol--fulltext {
+	padding: $padding--general $padding--small;
+}
+
+.mol--fulltext {
 	& p.atm--text-fullwidth {
 		font-size: 2.2rem;
 		line-height: 1.2;
@@ -84,6 +84,7 @@ section[class^="templ--single"] {
 
 @media (min-width: $media-desktop) {
 	.mol--fulltext {
+		padding: $padding--general*1.5 $padding--general;
 		& p.atm--text-fullwidth {
 			font-size: 3rem;
 		}
