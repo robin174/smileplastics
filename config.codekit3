@@ -1692,6 +1692,14 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/misc\/test-journal-pagination.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/misc\/test-journal-pagination.php",
+      "oF" : 0
+    },
     "\/page-auxiliary.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1722,14 +1730,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-home.php",
-      "oF" : 0
-    },
-    "\/page-journal-pagination.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-journal-pagination.php",
       "oF" : 0
     },
     "\/page-journal.php" : {
