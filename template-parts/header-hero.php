@@ -49,6 +49,11 @@
 											<section class="mol--hero-overlay">
 												<h2><?php the_sub_field('overlay_text_heading'); ?></h2>
 												<h4><?php the_sub_field('overlay_text_subheading'); ?></h4>
+												<?php if (get_sub_field('overlay_cta')): ?>
+													<div class="atm--button-cta">
+														<a class="button button-cta" href="<?php the_sub_field('overlay_cta_link'); ?>"><?php the_sub_field('overlay_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
+													</div>
+												<?php endif; ?>
 											</section>
 										<?php endif; ?>
 									</figure>
