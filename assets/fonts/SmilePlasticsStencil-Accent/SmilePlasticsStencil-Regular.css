@@ -1,0 +1,11 @@
+/* Webfont: SmilePlasticsStencil-Regular */@font-face {
+    font-family: 'SmilePlasticsStencil';
+    src: url('SmilePlasticsStencil-Regular.eot'); /* IE9 Compat Modes */
+    src: url('SmilePlasticsStencil-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('SmilePlasticsStencil-Regular.woff') format('woff'), /* Modern Browsers */
+         url('SmilePlasticsStencil-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

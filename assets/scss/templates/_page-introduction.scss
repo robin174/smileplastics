@@ -1,0 +1,20 @@
+.org--introduction-page {
+	padding: $padding--small $padding--small;
+	text-align: center;
+	& h1.atm--introduction {
+
+	}
+	& p.atm--introduction {
+		font-size: 1.2rem;
+		margin-top: $margin--small;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--introduction-page {
+		padding: 0 $padding--general;
+		& p.atm--introduction {
+			font-size: 1.6rem;
+		}
+	}
+}

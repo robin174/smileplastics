@@ -1,0 +1,31 @@
+.org--blockquote-brand {
+	& .org--blockquote-brand-inner {
+		padding: $padding--general $padding--small;
+		padding-bottom: $padding--large; // to accommodate the dots
+		& blockquote {
+			font-size: 1.3rem;
+		}
+	}
+	& .atm--button-cta {
+		margin-top:0;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--blockquote-brand {
+		& .org--blockquote-brand-inner {
+			padding: $padding--large $padding--general; 
+			& blockquote {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+.splide__arrow, .splide__pagination__page {
+	transition: $base-transition;
+	background-color: rgba(0,0,0,0.08);
+	&:hover, &.is-active {
+		background-color: rgba(0,0,0,0.16);
+	}
+}

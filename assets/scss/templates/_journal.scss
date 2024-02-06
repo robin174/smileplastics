@@ -1,0 +1,34 @@
+.org--journal {
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin: 10px;
+	& .mol--journal-image {
+
+	}
+	& .mol--journal-content {
+		padding: $padding--small;
+		& h4 {
+			font-family: $brand--font-med;
+			font-size: 1.1rem;
+			line-height: 1.2;
+			& a {
+				text-decoration: none;
+			}
+		}
+		& p.atm--journal-category {
+			@include headingUC;
+			font-family: $brand--font-med;
+			font-size: 0.8rem;
+			margin-bottom: 5px;
+			& a {
+				text-decoration: none;	
+			}
+			
+		}
+	}
+
+}
+
+section.block--journal {
+	margin: $margin--large 0;
+}

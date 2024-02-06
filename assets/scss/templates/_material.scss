@@ -1,0 +1,139 @@
+// Material: Hero
+.org--hero-material {
+	background-color: rgba($color--secondary, 50%);
+	& .mol--hero-material  {
+		& .atm--material-title {
+			& h2 {
+				margin-top: 0;
+				margin-bottom:$margin--small;
+				line-height: 1;
+			}
+			& span.atm--madefrom {
+				@include headingUC;
+				font-size:0.75rem;
+			}
+			& h4 {
+				font-family: $brand--font-reg;
+			}	
+		}
+	}
+}
+
+// Material: Builder
+.org--builder-material {}
+
+// Material: Pattern
+.org--pattern-material {
+	& .mol--pattern-intro {
+		margin-top: $margin--general;
+		border-bottom: 1px solid $color--secondary;
+		& h3 {
+			margin-bottom: $margin--general;
+		}
+	}
+}
+@media(min-width: $media-tablet) {
+	.org--pattern-material {
+		& .mol--pattern-intro {
+			border-bottom: none;
+			margin-top: 0;
+		}
+	}
+}
+
+// Material: Specifics
+.org--material-specifics {}
+
+
+// Material: Footer
+.org--footer-material {
+	& .mol--footer-material {
+		& .atm--footer-material {
+			margin-left: $margin--general;
+			margin-right: $margin--general;
+		}
+		& a.button {
+			display: inline-block;
+			margin-top: 0;
+			margin-bottom: $margin--general;
+		}
+	}
+}
+@media(min-width: $media-desktop) {
+	.org--footer-material {
+		& .mol--footer-material{
+			& .atm--footer-material {
+				margin-left: 0;
+				margin-right: 0;
+				padding: 0;
+				padding-right: $padding--general;
+			}
+			& a.button {
+				margin-top: $margin--small;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+@media(min-width: $media-desktop) and (max-width: $max-width) {
+	.org--footer-material {
+		& .mol--footer-material {
+			padding-left: $padding--small;
+			padding-right: $padding--small;
+		}
+	}
+}
+
+
+// To Double-check
+// Below
+.mol--material-specs {
+	margin-top: $margin--general;
+	margin-bottom: $margin--general;
+	&:first-child {
+		margin-bottom: $margin--general;
+	}
+	& .mol--material-specsize {
+		margin-top: 20px;
+		margin-bottom: 25px;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		& h4 {
+			@include headingUC;
+			font-family: $brand--font-med;
+			font-size: 0.9rem;
+			margin-bottom: 3px;
+		}
+		span {}
+	}
+	& .mol--material-add {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		& h5 {
+			@include headingUC;
+			font-family: $brand--font-med;
+		}
+		& p {
+			font-family: $brand--font-med;
+			font-size: 0.8rem;
+		}
+		& i {
+			margin-right: 5px;
+		}
+		& span {}
+	}
+}
+
+@media(min-width: $media-tablet) {
+	.mol--material-specs {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}

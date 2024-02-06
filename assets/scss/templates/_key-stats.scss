@@ -1,0 +1,31 @@
+.org--stats {
+	margin-top: $margin--general;
+	margin-bottom: $margin--general;
+	& .mol--stat {
+		margin: 0 30px;
+		margin-bottom: 50px;
+		text-align: center;	
+		& .atm--stat-icon {
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding-bottom: 20px;
+			border-bottom: 2px solid $color--secondary;
+		}
+		
+		& h2.key-stats {
+			font-size: 3rem;
+		}
+		& p.atm--stat-desc {
+			font-family: $brand--font-med;
+			font-size: 1rem;
+			line-height: 1.2;
+		}
+		& .atm--stat-disclaimer {
+			margin-top: 5px;
+			font-family: $brand--font-reg;
+			font-size: 0.8rem;
+			line-height: 1;
+		}
+	}
+}
