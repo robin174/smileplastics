@@ -4,7 +4,7 @@
 			<?php
 		        $args=array(
 		            'post_type' => 'materials',
-		            'collection' => 'classics',
+		            //'collection' => 'classics',
 		            'post_status' => 'publish',
 		            'order' => 'asc',
 		            'orderby' => 'menu_order'
@@ -156,6 +156,25 @@
 					        	<?php } ?>
 				        	</div>
 			        	<?php endwhile; ?>
+			        <?php } elseif($total_materials == ('19')) { ?>
+			        	<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+			        		<div class="col-3 col-md">
+				        		<?php if( get_field('mat_contrast') == 'light' ) { ?>
+				        			<a href="<?php the_permalink(); ?>">
+					        			<div class="atm--relative atm--contrast-light">
+					        				<?php get_template_part('template-parts/part-material-sm');?>
+					        			</div>
+					        		</a>
+				        		<?php } elseif( get_field('mat_contrast') == 'dark' ) { ?>
+				        			<a href="<?php the_permalink(); ?>">
+				        				<div class="atm--relative atm--contrast-dark">
+				        					<?php get_template_part('template-parts/part-material-sm');?>
+					        			</div>
+					        		</a>
+					        	<?php } ?>
+				        	</div>
+			        	<?php endwhile; ?>
+			        
 			        <?php } ?>
 		       	<?php } wp_reset_query(); ?>
 		</div>
