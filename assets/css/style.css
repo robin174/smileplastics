@@ -960,7 +960,8 @@ footer {
   padding: 12px 0; }
   .org--banneradvert h3.atm--banneradvert {
     color: #413c2d;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 5px; }
     .org--banneradvert h3.atm--banneradvert a {
       color: #413c2d;
       text-decoration: underline; }
@@ -1015,6 +1016,24 @@ footer {
   .mol--columns-inner {
     margin-left: unset;
     margin-right: unset; } }
+
+.fluent-forms {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .fluent-forms h3 {
+    margin-top: 30px; }
+  .fluent-forms input {
+    padding: 5px 10px; }
+  .fluent-forms button[type="submit"] {
+    font-size: 1rem;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.08);
+    border: none;
+    padding: 14px 28px; }
+    .fluent-forms button[type="submit"]:hover {
+      background-color: rgba(0, 0, 0, 0.16); }
+      .fluent-forms button[type="submit"]:hover i {
+        transform: translate(12px, 2px); }
 
 .org--journal {
   background-color: white;
