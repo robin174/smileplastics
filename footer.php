@@ -36,10 +36,10 @@
                 <div class="col-12 col-md-4 col-lg-4 offset-lg-3">
                 	<section class="col-big">
                     	<!-- <h4>Stay in touch</h4> -->
-                    	<a href="<?php the_field('footer_sp_facebook', 'options'); ?>" class="icon-social" title="Smile Plastics on Facebook" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
-                    	<a href="<?php the_field('footer_sp_instagram', 'options'); ?>" class="icon-social" title="Smile Plastics on Instagram" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
-                    	<a href="<?php the_field('footer_sp_pinterest', 'options'); ?>" class="icon-social" title="Smile Plastics on Pinterest" target="_blank"><i class="fab fa-2x fa-pinterest"></i></a>
-                    	<a href="<?php the_field('footer_sp_twitter', 'options'); ?>" class="icon-social" title="Smile Plastics on Twitter" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+                    	<a href="<?php the_field('footer_sp_facebook', 'options'); ?>" class="icon-social" title="Smile Plastics on Facebook" target="_blank"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                    	<a href="<?php the_field('footer_sp_instagram', 'options'); ?>" class="icon-social" title="Smile Plastics on Instagram" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a>
+                    	<a href="<?php the_field('footer_sp_pinterest', 'options'); ?>" class="icon-social" title="Smile Plastics on Pinterest" target="_blank"><i class="fa-brands fa-2x fa-pinterest"></i></a>
+                    	<a href="<?php the_field('footer_sp_twitter', 'options'); ?>" class="icon-social" title="Smile Plastics on Twitter" target="_blank"><i class="fa-brands fa-2x fa-x-twitter"></i></a>
                         <a href="<?php the_field('footer_sp_email', 'options'); ?>" class="icon-social" title="Email Smile Plastics"><i class="fas fa-2x fa-envelope"></i></a>
                		</section>
                     <section class="col-big"> 
@@ -49,7 +49,8 @@
 							<img class="logo-brand" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smileplastics-white.svg" alt="Logo - Smile Plastics">
 						</figure>
                			<p><?php the_field('footer_address', 'options'); ?><br>
-						VAT number: <?php the_field('footer_company_number', 'options'); ?><br>
+                        <?php the_field('footer_address_us', 'options'); ?></p>
+						<p>VAT number: <?php the_field('footer_company_number', 'options'); ?><br>
 						Company number: <?php the_field('footer_vat_number', 'options'); ?></p>
                         <div style="margin-top: 24px;margin-bottom: 20px;">
                             <figure class="iso-certification">
