@@ -396,7 +396,7 @@ nav {
         background-color: rgba(0, 0, 0, 0.1);
         color: #e6e6e6; } }
 
-.btn-close {
+nav.btn-close {
   width: 3em;
   height: 3em;
   background: unset !important; }
@@ -1034,6 +1034,53 @@ footer {
       background-color: rgba(0, 0, 0, 0.16); }
       .fluent-forms button[type="submit"]:hover i {
         transform: translate(12px, 2px); }
+
+.mol--handling-unit h3 {
+  margin-bottom: 5px !important; }
+
+.mol--handling-unit p {
+  margin-bottom: 5px !important; }
+  .mol--handling-unit p.atm--hnd-introduction {
+    font-size: 1.2rem; }
+
+.mol--handling-unit .atm--button-cta {
+  margin-top: 18px !important; }
+
+.mol--handling-unit .atm--handling-image {
+  position: relative;
+  margin-bottom: 2rem; }
+  .mol--handling-unit .atm--handling-image .atm--handling-icon {
+    transition: 0.3s;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .mol--handling-unit .atm--handling-image .atm--handling-icon img {
+      height: 100px;
+      width: 100px; }
+  .mol--handling-unit .atm--handling-image:hover .atm--handling-icon {
+    opacity: 1; }
+
+.atm--placeholder-button {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+.modal-content {
+  background: unset;
+  border: unset; }
+  .modal-content .modal-header {
+    border-bottom: unset; }
+  .modal-content .modal-body {
+    padding: 0; }
+
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+    max-width: 900px; }
+  .mol--handling-unit p.atm--hnd-introduction {
+    font-size: 1.6rem; } }
 
 .org--journal {
   background-color: white;

@@ -128,10 +128,12 @@ nav {
 	}
 }
 
-.btn-close {
-	width: 3em;
-    height: 3em;
-	background: unset!important;
+nav {
+	&.btn-close {
+		width: 3em;
+	    height: 3em;
+		background: unset!important;
+	}
 }
 
 // Medium -> max menu: normal menu-item
