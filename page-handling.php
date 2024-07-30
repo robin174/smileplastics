@@ -142,45 +142,44 @@ get_header(); ?>
 				} ?>
 
 
+			<?php if(get_row_layout() == 'hnd_50-50'): 
+				$modal_5050_id = get_sub_field('hnd_5050_clip_id');
+				$modal_5050_title = get_sub_field('hnd_5050_clip_title');
+				$modal_5050_body = get_sub_field('hnd_5050_clip_embed'); ?>
 
-			<?php if(get_row_layout() == 'hnd_50-50'): ?>
-				<?php if( get_sub_field('hnd_bg_color')) { ?>
-					<section style="background-color:<?php the_sub_field('hnd_bg_color_value');?>">
+				<?php if( get_sub_field('hnd_5050_bg_color')) { ?>
+					<section style="background-color:<?php the_sub_field('hnd_5050_bg_color_value');?>">
 				<?php } else { ?>
 					<section>
 				<?php } ?>
 					<div class="container">
-						<?php if( get_sub_field('hnd_image_position') == 'imageleft' ) { ?>
+						<?php if( get_sub_field('hnd_5050_image_position') == 'imageleft' ) { ?>
 							<div class="row g-0 d-flex">
 								<div class="col-12 col-md-6 align-self-center order-2 order-md-1">
-									<div class="d-flex justify-content-end">
-										<figure>
-											<img class="mw-100" src="<?php the_sub_field('hnd_image_file')?>" alt="<?php the_sub_field('hnd_image_caption'); ?>">
-											<?php if( get_sub_field('hnd_image_caption_pos') == 'overlaylight' && get_sub_field('hnd_image_caption_lr') == 'captionleft' ) { ?>
-												<figcaption class="atm--fc-overlaylight atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'overlaylight' && get_sub_field('hnd_image_caption_lr') == 'captionright' ) { ?>
-												<figcaption class="atm--fc-overlaylight atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'overlaydark' && get_sub_field('hnd_image_caption_lr') == 'captionleft' ) { ?>
-												<figcaption class="atm--fc-overlaydark atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'overlaydark' && get_sub_field('hnd_image_caption_lr') == 'captionright' ) { ?>
-												<figcaption class="atm--fc-overlaydark atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'rotated' ) { ?>
-												<figcaption class="atm--fc-rotated"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'default' && get_sub_field('hnd_image_caption_lr') == 'captionleft') { ?>
-												<figcaption class="atm--fc-default atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'default' && get_sub_field('hnd_image_caption_lr') == 'captionright') { ?>
-												<figcaption class="atm--fc-default atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } ?>
-										</figure>
+									<div class="d-flex justify-content-end mol--handling-unit">
+										<div class="atm--handling-image">
+											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_id ?>">
+												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
+												<div class="atm--handling-icon">
+													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
+												</div>
+											</button>
+										</div>
 									</div>
 								</div>
 								<div class="col-12 col-md-6 align-self-center order-1 order-md-2">
 									<section class="mol--5050-content">
-										<?php if( get_sub_field('hnd_add_content') == 'titletext' ) { ?>
-											<?php get_template_part('template-parts/repeater-titletext'); ?>
-										<?php } elseif( get_sub_field('hnd_add_content') == 'blockquote' ) { ?>
-											<?php get_template_part('template-parts/part-blockquote'); ?>
-										<?php } ?>
+										<section class="mol--repeater-text">
+											<?php if(get_sub_field('hnd_5050_clip_title')): ?>
+												<h3><?php the_sub_field('hnd_5050_clip_title'); ?></h3>
+											<?php endif; ?>
+											<?php if(get_sub_field('hnd_5050_clip_description')): ?>
+												<p><?php the_sub_field('hnd_5050_clip_description'); ?></p>
+											<?php endif; ?>
+											<div class="atm--button-cta">
+												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Launch PDF<i class="far fa-long-arrow-right"></i></a>
+											</div>
+										</section>
 										<?php if (get_sub_field('hnd_cta')): ?>
 											<div class="atm--button-cta">
 												<?php if(get_sub_field('hnd_cta_select') == 'link' ) { ?>
@@ -193,15 +192,21 @@ get_header(); ?>
 									</section>
 								</div>
 							</div>
-						<?php } elseif( get_sub_field('hnd_image_position') == 'imageright' ) { ?>
+						<?php } elseif( get_sub_field('hnd_5050_image_position') == 'imageright' ) { ?>
 							<div class="row g-0 d-flex">
 								<div class="col-12 col-md-6 align-self-center order-1">
 									<section class="mol--5050-content">
-										<?php if( get_sub_field('hnd_add_content') == 'titletext' ) { ?>
-											<?php get_template_part('template-parts/repeater-titletext'); ?>
-										<?php } elseif( get_sub_field('hnd_add_content') == 'blockquote' ) { ?>
-											<?php get_template_part('template-parts/part-blockquote'); ?>
-										<?php } ?>
+										<section class="mol--repeater-text">
+											<?php if(get_sub_field('hnd_5050_clip_title')): ?>
+												<h3><?php the_sub_field('hnd_5050_clip_title'); ?></h3>
+											<?php endif; ?>
+											<?php if(get_sub_field('hnd_5050_clip_description')): ?>
+												<p><?php the_sub_field('hnd_5050_clip_description'); ?></p>
+											<?php endif; ?>
+											<div class="atm--button-cta">
+												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Launch PDF<i class="far fa-long-arrow-right"></i></a>
+											</div>
+										</section>
 										<?php if (get_sub_field('hnd_cta')): ?>
 											<div class="atm--button-cta">
 												<?php if(get_sub_field('hnd_cta_select') == 'link' ) { ?>
@@ -214,41 +219,46 @@ get_header(); ?>
 									</section>
 								</div>
 								<div class="col-12 col-md-6 align-self-center order-2">
-									<div class="d-flex justify-content-start">
-										<figure>
-											<img class="mw-100" src="<?php the_sub_field('hnd_image_file')?>" alt="<?php the_sub_field('hnd_image_caption'); ?>">
-											<?php if( get_sub_field('hnd_image_caption_pos') == 'overlaylight' && get_sub_field('hnd_image_caption_lr') == 'captionleft' ) { ?>
-												<figcaption class="atm--fc-overlaylight atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'overlaylight' && get_sub_field('hhnd_image_caption_lr') == 'captionright' ) { ?>
-												<figcaption class="atm--fc-overlaylight atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'overlaydark' && get_sub_field('hnd_image_caption_lr') == 'captionleft' ) { ?>
-												<figcaption class="atm--fc-overlaydark atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'overlaydark' && get_sub_field('hnd_image_caption_lr') == 'captionright' ) { ?>
-												<figcaption class="atm--fc-overlaydark atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'rotated' ) { ?>
-												<figcaption class="atm--fc-rotated"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'default' && get_sub_field('hnd_image_caption_lr') == 'captionleft') { ?>
-												<figcaption class="atm--fc-default atm--fc-left"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } elseif( get_sub_field('hnd_image_caption_pos') == 'default' && get_sub_field('hnd_image_caption_lr') == 'captionright') { ?>
-												<figcaption class="atm--fc-default atm--fc-right"><i class="far fa-long-arrow-up"></i><?php the_sub_field('hnd_image_caption'); ?></figcaption>
-											<?php } ?>
-										</figure>
+									<div class="d-flex justify-content-start mol--handling-unit">
+
+										<div class="atm--handling-image">
+											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_id ?>">
+												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
+												<div class="atm--handling-icon">
+													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
+												</div>
+											</button>
+										</div>
+
 									</div>
 								</div>
 							</div>
 						<?php } ?>
 					</div>
 				</section>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal-<?php echo $modal_id ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+						    <div class="modal-header">
+						    	<?php /* <?php echo $modal_title; ?> */ ?>
+						    	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						    </div>
+							<div class="modal-body">
+								<div class="ratio ratio-16x9">
+									<?php echo $modal_body; ?>
+								</div>
+							</div>
+
+				    	</div>
+					</div>
+				</div>
+
 			<?php endif; ?>
 
 		</section>
 	<?php endwhile; ?>
-
-	<!-- Page Builder: Handling Guidelines -->
-	<!-- Add the sections here... 
-		Image bank: 2 images or 3 images (including title (leave blank if not needed), description (leave blank if not needed) and button CTA (To PDF) ))
-		50/50 Bank: Direct copy? 
-	-->
 </section>
 
 <!-- Need the below to stop the video when modal is closed -->

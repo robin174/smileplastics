@@ -1063,6 +1063,14 @@ footer {
   .mol--handling-unit .atm--handling-image:hover .atm--handling-icon {
     opacity: 1; }
 
+.mol--handling-unit iframe {
+  border: unset;
+  background: red;
+  line-height: 0; }
+
+.justify-content-end .atm--handling-image {
+  margin-bottom: 0 !important; }
+
 .atm--placeholder-button {
   border: none;
   padding: 0;
