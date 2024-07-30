@@ -1071,6 +1071,9 @@ footer {
 .justify-content-end .atm--handling-image {
   margin-bottom: 0 !important; }
 
+.justify-content-start .atm--handling-image {
+  margin-bottom: 0 !important; }
+
 .atm--placeholder-button {
   border: none;
   padding: 0;

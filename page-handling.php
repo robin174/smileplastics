@@ -37,7 +37,6 @@ get_header(); ?>
 					 	<div class="row justify-content-center">
 					    	<?php while ( have_rows('hnd_repeater_clips') ) : the_row();
 					    		$modal_id = get_sub_field('hnd_clip_id');
-								$modal_title = get_sub_field('hnd_clip_title');
 								$modal_body = get_sub_field('hnd_clip_embed'); ?>
 								<?php if($total_rows == ('2')){ ?>
 									<div class="col-6 mol--handling-unit text-center">
@@ -64,7 +63,6 @@ get_header(); ?>
 											<div class="modal-dialog modal-lg modal-dialog-centered">
 												<div class="modal-content">
 												    <div class="modal-header">
-												    	<?php /* <?php echo $modal_title; ?> */ ?>
 												    	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 												    </div>
 													<div class="modal-body">
@@ -102,7 +100,6 @@ get_header(); ?>
 											<div class="modal-dialog modal-lg modal-dialog-centered">
 												<div class="modal-content">
 												    <div class="modal-header">
-												    	<?php /* <?php echo $modal_title; ?> */ ?>
 												    	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 												    </div>
 													<div class="modal-body">
@@ -144,7 +141,6 @@ get_header(); ?>
 
 			<?php if(get_row_layout() == 'hnd_50-50'): 
 				$modal_5050_id = get_sub_field('hnd_5050_clip_id');
-				$modal_5050_title = get_sub_field('hnd_5050_clip_title');
 				$modal_5050_body = get_sub_field('hnd_5050_clip_embed'); ?>
 
 				<?php if( get_sub_field('hnd_5050_bg_color')) { ?>
@@ -158,7 +154,7 @@ get_header(); ?>
 								<div class="col-12 col-md-6 align-self-center order-2 order-md-1">
 									<div class="d-flex justify-content-end mol--handling-unit">
 										<div class="atm--handling-image">
-											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_id ?>">
+											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_5050_id ?>">
 												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
 												<div class="atm--handling-icon">
 													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
@@ -222,7 +218,7 @@ get_header(); ?>
 									<div class="d-flex justify-content-start mol--handling-unit">
 
 										<div class="atm--handling-image">
-											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_id ?>">
+											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_5050_id ?>">
 												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
 												<div class="atm--handling-icon">
 													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
@@ -238,7 +234,7 @@ get_header(); ?>
 				</section>
 
 				<!-- Modal -->
-				<div class="modal fade" id="exampleModal-<?php echo $modal_id ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="exampleModal-<?php echo $modal_5050_id ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg modal-dialog-centered">
 						<div class="modal-content">
 						    <div class="modal-header">
@@ -247,7 +243,7 @@ get_header(); ?>
 						    </div>
 							<div class="modal-body">
 								<div class="ratio ratio-16x9">
-									<?php echo $modal_body; ?>
+									<?php echo $modal_5050_body; ?>
 								</div>
 							</div>
 
