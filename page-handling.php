@@ -55,7 +55,7 @@ get_header(); ?>
 											<p><?php the_sub_field('hnd_clip_description'); ?></p>
 										<?php endif; ?>
 										<div class="atm--button-cta">
-											<a class="button button-cta" href="<?php the_sub_field('hnd_clip_pdf'); ?>">Launch PDF<i class="far fa-long-arrow-right"></i></a>
+											<a class="button button-cta" href="<?php the_sub_field('hnd_clip_pdf'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 										</div>
 
 										<!-- Modal -->
@@ -92,7 +92,7 @@ get_header(); ?>
 											<p><?php the_sub_field('hnd_clip_description'); ?></p>
 										<?php endif; ?>
 										<div class="atm--button-cta">
-											<a class="button button-cta" href="<?php the_sub_field('hnd_clip_pdf'); ?>">Launch PDF<i class="far fa-long-arrow-right"></i></a>
+											<a class="button button-cta" href="<?php the_sub_field('hnd_clip_pdf'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 										</div>
 
 										<!-- Modal -->
@@ -173,7 +173,7 @@ get_header(); ?>
 												<p><?php the_sub_field('hnd_5050_clip_description'); ?></p>
 											<?php endif; ?>
 											<div class="atm--button-cta">
-												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Launch PDF<i class="far fa-long-arrow-right"></i></a>
+												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 											</div>
 										</section>
 										<?php if (get_sub_field('hnd_cta')): ?>
@@ -200,7 +200,7 @@ get_header(); ?>
 												<p><?php the_sub_field('hnd_5050_clip_description'); ?></p>
 											<?php endif; ?>
 											<div class="atm--button-cta">
-												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Launch PDF<i class="far fa-long-arrow-right"></i></a>
+												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 											</div>
 										</section>
 										<?php if (get_sub_field('hnd_cta')): ?>
