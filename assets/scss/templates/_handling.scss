@@ -1,4 +1,5 @@
 .mol--handling-unit {
+	margin-bottom: $margin--general;
 	& h3 {
 		margin-bottom: 5px !important;
 	}
@@ -72,6 +73,9 @@
 }
 
 @media (min-width: $media-desktop) {
+	.mol--handling-unit {
+		margin-bottom: 5px;
+	}
 	.modal-lg, .modal-xl {
 		max-width: 900px;
 	}
