@@ -39,7 +39,9 @@ get_header(); ?>
 					    		$modal_id = get_sub_field('hnd_clip_id');
 								$modal_body = get_sub_field('hnd_clip_embed'); ?>
 								<?php if($total_rows == ('2')){ ?>
-									<div class="col-6 mol--handling-unit text-center">
+
+
+									<div class="col-12 col-md-6 mol--handling-unit text-center">
 							    		<div class="atm--handling-image">
 											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_id ?>">
 												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_clip_image'); ?>">
@@ -76,7 +78,7 @@ get_header(); ?>
 										</div>
 									</div>
 								<?php } elseif($total_rows == ('3')){ ?>
-									<div class="col-4 mol--handling-unit text-center">
+									<div class="col-12 col-md-4 mol--handling-unit text-center">
 							    		<div class="atm--handling-image">
 											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_id ?>">
 												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_clip_image'); ?>">
@@ -120,11 +122,9 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			<?php // can we loop through the rows like you do on CPTs? and then clear? ?>
 			<?php // https://wpbeaches.com/create-an-acf-repeater-loop-of-bootstrap-modals-in-wordpress/ ?>
-
-			<?php // For each ?>
-			<?php 
+			<?php // For each example via ACF Repeater ?>
+			<?php /*
 				$rows = get_field('repeater_field_name');
 				if( $rows ) {
 				    echo '<ul class="slides">';
@@ -136,8 +136,8 @@ get_header(); ?>
 				        echo '</li>';
 				    }
 				    echo '</ul>';
-				} ?>
-
+				} */ 
+			?>
 
 			<?php if(get_row_layout() == 'hnd_50-50'): 
 				$modal_5050_id = get_sub_field('hnd_5050_clip_id');
@@ -150,19 +150,30 @@ get_header(); ?>
 				<?php } ?>
 					<div class="container">
 						<?php if( get_sub_field('hnd_5050_image_position') == 'imageleft' ) { ?>
+
 							<div class="row g-0 d-flex">
-								<div class="col-12 col-md-6 align-self-center order-2 order-md-1">
-									<div class="d-flex justify-content-end mol--handling-unit">
-										<div class="atm--handling-image">
-											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_5050_id ?>">
+								<?php if( get_sub_field('hnd_5050_novideo')) { ?>
+									<div class="col-12 col-md-6 align-self-center order-2 order-md-1">
+										<div class="d-flex justify-content-end mol--handling-unit">
+											<div class="atm--handling-image">
 												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
-												<div class="atm--handling-icon">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
-												</div>
-											</button>
+											</div>
 										</div>
 									</div>
-								</div>
+								<?php } else { ?>
+									<div class="col-12 col-md-6 align-self-center order-2 order-md-1">
+										<div class="d-flex justify-content-end mol--handling-unit">
+											<div class="atm--handling-image">
+												<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_5050_id ?>">
+													<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
+													<div class="atm--handling-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								<?php } ?>
 								<div class="col-12 col-md-6 align-self-center order-1 order-md-2">
 									<section class="mol--5050-content">
 										<section class="mol--repeater-text">
@@ -173,18 +184,13 @@ get_header(); ?>
 												<p><?php the_sub_field('hnd_5050_clip_description'); ?></p>
 											<?php endif; ?>
 											<div class="atm--button-cta">
-												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
-											</div>
-										</section>
-										<?php if (get_sub_field('hnd_cta')): ?>
-											<div class="atm--button-cta">
-												<?php if(get_sub_field('hnd_cta_select') == 'link' ) { ?>
-													<a class="button button-cta" href="<?php the_sub_field('hnd_cta_link'); ?>"><?php the_sub_field('hnd_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
+												<?php if(get_sub_field('hnd_5050_cta_select') == 'link' ) { ?>
+													<a class="button button-cta" href="<?php the_sub_field('hnd_5050_cta_link'); ?>"><?php the_sub_field('hnd_5050_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
 												<?php } elseif(get_sub_field('hnd_cta_select') == 'file' ) { ?>
-													<a class="button button-cta" target="_blank" href="<?php the_sub_field('hnd_cta_file'); ?>"><?php the_sub_field('hnd_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
+													<a class="button button-cta" target="_blank" href="<?php the_sub_field('hnd_5050_cta_file'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 												<?php } ?> 
 											</div>
-										<?php endif; ?>
+										</section>
 									</section>
 								</div>
 							</div>
@@ -200,34 +206,37 @@ get_header(); ?>
 												<p><?php the_sub_field('hnd_5050_clip_description'); ?></p>
 											<?php endif; ?>
 											<div class="atm--button-cta">
-												<a class="button button-cta" href="<?php the_sub_field('hnd_5050_clip_pdf'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
-											</div>
-										</section>
-										<?php if (get_sub_field('hnd_cta')): ?>
-											<div class="atm--button-cta">
-												<?php if(get_sub_field('hnd_cta_select') == 'link' ) { ?>
-													<a class="button button-cta" href="<?php the_sub_field('hnd_cta_link'); ?>"><?php the_sub_field('hnd_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
+												<?php if(get_sub_field('hnd_5050_cta_select') == 'link' ) { ?>
+													<a class="button button-cta" href="<?php the_sub_field('hnd_5050_cta_link'); ?>"><?php the_sub_field('hnd_5050_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
 												<?php } elseif(get_sub_field('hnd_cta_select') == 'file' ) { ?>
-													<a class="button button-cta" target="_blank" href="<?php the_sub_field('hnd_cta_file'); ?>"><?php the_sub_field('hnd_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
+													<a class="button button-cta" target="_blank" href="<?php the_sub_field('hnd_5050_cta_file'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 												<?php } ?> 
 											</div>
-										<?php endif; ?>
+										</section>
 									</section>
 								</div>
-								<div class="col-12 col-md-6 align-self-center order-2">
-									<div class="d-flex justify-content-start mol--handling-unit">
-
-										<div class="atm--handling-image">
-											<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_5050_id ?>">
+								<?php if( get_sub_field('hnd_5050_novideo')) { ?>
+									<div class="col-12 col-md-6 align-self-center order-2 order-md-1">
+										<div class="d-flex justify-content-end mol--handling-unit">
+											<div class="atm--handling-image">
 												<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
-												<div class="atm--handling-icon">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
-												</div>
-											</button>
+											</div>
 										</div>
-
 									</div>
-								</div>
+								<?php } else { ?>
+									<div class="col-12 col-md-6 align-self-center order-2">
+										<div class="d-flex justify-content-start mol--handling-unit">
+											<div class="atm--handling-image">
+												<button class="atm--placeholder-button" data-bs-toggle="modal" data-bs-target="#exampleModal-<?php echo $modal_5050_id ?>">
+													<img class="atm--placeholder-img mw-100" src="<?php the_sub_field('hnd_5050_image_file'); ?>">
+													<div class="atm--handling-icon">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/use-play-button.png">
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								<?php } ?>
 							</div>
 						<?php } ?>
 					</div>
@@ -246,7 +255,6 @@ get_header(); ?>
 									<?php echo $modal_5050_body; ?>
 								</div>
 							</div>
-
 				    	</div>
 					</div>
 				</div>
