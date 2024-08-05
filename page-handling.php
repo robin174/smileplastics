@@ -186,7 +186,7 @@ get_header(); ?>
 											<div class="atm--button-cta">
 												<?php if(get_sub_field('hnd_5050_cta_select') == 'link' ) { ?>
 													<a class="button button-cta" href="<?php the_sub_field('hnd_5050_cta_link'); ?>"><?php the_sub_field('hnd_5050_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
-												<?php } elseif(get_sub_field('hnd_cta_select') == 'file' ) { ?>
+												<?php } elseif(get_sub_field('hnd_5050_cta_select') == 'file' ) { ?>
 													<a class="button button-cta" target="_blank" href="<?php the_sub_field('hnd_5050_cta_file'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 												<?php } ?> 
 											</div>
@@ -208,7 +208,7 @@ get_header(); ?>
 											<div class="atm--button-cta">
 												<?php if(get_sub_field('hnd_5050_cta_select') == 'link' ) { ?>
 													<a class="button button-cta" href="<?php the_sub_field('hnd_5050_cta_link'); ?>"><?php the_sub_field('hnd_5050_cta_command'); ?><i class="far fa-long-arrow-right"></i></a>
-												<?php } elseif(get_sub_field('hnd_cta_select') == 'file' ) { ?>
+												<?php } elseif(get_sub_field('hnd_5050_cta_select') == 'file' ) { ?>
 													<a class="button button-cta" target="_blank" href="<?php the_sub_field('hnd_5050_cta_file'); ?>">Download PDF<i class="far fa-long-arrow-right"></i></a>
 												<?php } ?> 
 											</div>
