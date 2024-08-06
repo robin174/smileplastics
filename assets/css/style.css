@@ -1085,12 +1085,12 @@ footer {
     padding: 0; }
 
 @media (min-width: 992px) {
-  .mol--handling-unit {
-    margin-bottom: 5px; }
   .modal-lg, .modal-xl {
     max-width: 900px; }
-  .mol--handling-unit p.atm--hnd-introduction {
-    font-size: 1.6rem; } }
+  .mol--handling-unit {
+    margin-bottom: 0; }
+    .mol--handling-unit p.atm--hnd-introduction {
+      font-size: 1.6rem; } }
 
 .org--journal {
   background-color: white;

@@ -61,7 +61,7 @@
 }
 
 // Modal Design
-.modal-content { 
+.modal-content {
 	background: unset;
 	border: unset;
 	& .modal-header {
@@ -77,6 +77,7 @@
 		max-width: 900px;
 	}
 	.mol--handling-unit {
+		margin-bottom: 0;
 		& p {
 			&.atm--hnd-introduction {
 				font-size: 1.6rem;
