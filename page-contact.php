@@ -51,12 +51,6 @@ get_header(); ?>
 							<p><?php the_field('opening_hours'); ?></p>
 						</div>
 					<?php endif; ?>
-					<?php if(get_field('visits_factory')): ?>
-						<div>
-							<h4>The Factory</h4>
-							<p><?php the_field('visits_factory'); ?></p>
-						</div>
-					<?php endif; ?>
 
 					<div class="atm--form">
 						<?php echo do_shortcode('[contact-form-7 html_class="form-custome" id="443" title="Contact us"]'); ?>
