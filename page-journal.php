@@ -15,7 +15,6 @@ get_header(); ?>
 				            $args=array(
 				 				'post_type' => 'post',
 								'order' => 'DESC',
-								'posts_per_page' => 10,
 								'post_status' => 'publish',
 				            );
 				            $my_query = null;
