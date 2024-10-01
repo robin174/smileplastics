@@ -99,20 +99,18 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
-
+//  Is this needed?
 function pagination() {
-                  global $wp_query;
-                  $big = 999999999;
-                  echo paginate_links(array(
-                      'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-                      'format' => '?paged=%#%',
-                      'current' => max(1, get_query_var('paged')),
-                      'total' => $wp_query->max_num_pages
-                  ));
-              }
-              add_action('init', 'pagination');
-
-
+    global $wp_query;
+    $big = 999999999;
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $wp_query->max_num_pages
+    ));
+}
+add_action('init', 'pagination');
 
 
 /* Add WooCommerce theme support */
@@ -166,8 +164,57 @@ function smileplastics_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'smileplastics_login_logo' );
 
-/* Load custom WordPress nav walker 4 */
-// require_once THEME_DIR_PATH . '/includes/wp-bootstrap-navwalker4.php';
+
+
+// Load more on Journal
+function enqueue_masonry_and_load_more_scripts() {
+    // Enqueue Masonry script (included with WordPress)
+    wp_enqueue_script('masonry');
+    
+    // Enqueue custom script for Load More functionality and Masonry initialization
+    wp_enqueue_script('masonry-load-more', get_template_directory_uri() . '/assets/js/masonry-load-more.js', array('jquery', 'masonry'), null, true);
+    
+    // Localize script for AJAX
+    wp_localize_script('masonry-load-more', 'ajax_loadmore', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'posts_per_page' => 10,  // Adjust based on how many posts you want to load
+        'nonce' => wp_create_nonce('load_more_posts'),
+    ));
+}
+add_action('wp_enqueue_scripts', 'enqueue_masonry_and_load_more_scripts');
+
+
+function loadmore_ajax_handler() {
+    check_ajax_referer('load_more_posts', 'nonce');  // Security check
+
+    $paged = isset($_POST['page']) ? $_POST['page'] : 1;  // Current page
+    $paged++;  // Load the next page
+
+    $query_args = array(
+        'post_type' => 'post',
+        'order' => 'DESC',
+        'post_status' => 'publish',
+        'posts_per_page' => 12,  // Same as in your script
+        'paged' => $paged,
+    );
+
+    $posts_query = new WP_Query($query_args);
+
+    if ($posts_query->have_posts()) :
+        while ($posts_query->have_posts()) : $posts_query->the_post();
+            get_template_part('template-parts/part-journal-test', get_post_format());  // Post template 
+        endwhile;
+    endif;
+    
+    wp_reset_postdata();
+    
+    die();  // Important to terminate the script for AJAX
+}
+
+add_action('wp_ajax_loadmore_posts', 'loadmore_ajax_handler');  // For logged-in users
+add_action('wp_ajax_nopriv_loadmore_posts', 'loadmore_ajax_handler');  // For non-logged-in users
+
+
 
 /* Load custom WordPress nav walker 5 */
 require_once THEME_DIR_PATH . '/includes/wp-bootstrap-navwalker5.php';

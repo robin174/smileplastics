@@ -169,6 +169,8 @@
 				<?php get_template_part('template-parts/part-key-stats'); ?>
 			<?php } elseif( get_sub_field('whole_template_select') == 'chartcolumns' ) { ?>
 				<?php get_template_part('template-parts/chart-columns'); ?>
+			<?php } elseif( get_sub_field('whole_template_select') == 'workedwith' ) { ?>
+				<?php get_template_part('template-parts/part-workedwith'); ?>
 			<?php } elseif( get_sub_field('whole_template_select') == 'edgingdiagrams' ) { ?>
 				<?php if(get_sub_field('whole_template_title')) { ?>
 					<h1 class="atm--template-title"><?php the_sub_field('whole_template_title') ?></h1>

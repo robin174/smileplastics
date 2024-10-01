@@ -857,6 +857,28 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/js\/masonry-load-more-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/masonry-load-more-min-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/assets\/js\/masonry-load-more.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/masonry-load-more-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
     "\/assets\/js\/slick\/ajax-loader.gif" : {
       "ft" : 4194304,
       "iS" : 4178,
@@ -1796,6 +1818,14 @@
       "oAP" : "\/page-home.php",
       "oF" : 0
     },
+    "\/page-journal-test.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-journal-test.php",
+      "oF" : 0
+    },
     "\/page-journal.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2047,6 +2077,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/part-blockquote.php",
+      "oF" : 0
+    },
+    "\/template-parts\/part-journal-test.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/part-journal-test.php",
       "oF" : 0
     },
     "\/template-parts\/part-journal.php" : {
