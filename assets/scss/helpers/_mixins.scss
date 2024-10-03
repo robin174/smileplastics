@@ -1,0 +1,26 @@
+@mixin headingUC {
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-family: $brand--font-med;
+}
+
+@mixin navigationUC {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-family: $brand--font-med;
+}
+
+@mixin footerUC {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-family: $brand--font-reg;
+}
+
+@mixin figcaptionOverlay {
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	//right: 0;
+	padding: 8px 6px;
+	padding-right: 10px;
+}

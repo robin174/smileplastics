@@ -1,0 +1,53 @@
+.templ--single-post {
+	& .org--image-block {
+		margin: $margin--large 0;
+	}
+	& .mol-post-meta {
+		margin-top: $margin--large;
+	}
+	& .atm--post-intro {
+		font-family: $brand--font-med;
+		font-size: 1.3rem;
+		line-height: 1.2;
+	}
+	& .mol--post-text {
+		margin: $margin--small 0;
+	}
+	& .mol--post-block {
+		margin: $margin--large 0;
+	}
+}
+
+.templ--single-post {
+	& .atm--post-category {
+		font-size: 1.2rem;
+	}
+	& .atm--post-author {
+		margin-top: $margin--small;
+		margin-bottom: $margin--general;
+		font-size: 1.4rem;
+		& span {
+			font-family: $brand--font-med;
+			font-size: 0.9rem;
+		}
+	}
+	& .atm--post-date {
+		font-family: $brand--font-med;
+		font-size: 1.2rem;
+	}
+}
+
+.atm--conclusion {
+	font-family: $brand--font-med;
+	font-size: 1.2rem;
+}
+
+@media (min-width: $media-tablet) {
+	.templ--single-post {
+		& .atm--post-intro {
+			font-family: $brand--font-med;
+			font-size: 1.8rem;
+			line-height: 1.4;
+		}
+	}
+}

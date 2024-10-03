@@ -1,0 +1,11 @@
+.org--workedwith {
+	padding: $padding--large $padding--small;
+	& h1 {
+		margin-top: $margin--small;
+		margin-bottom: $margin--general;
+	}
+	& .mol--workedwith {
+		margin: $margin--small 0;
+	}
+
+}

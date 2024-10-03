@@ -1,0 +1,51 @@
+.org--hero-project {
+}
+
+.org--specifics-project {
+	& .atm--specifics-project {
+		border-bottom: 1px solid $color--secondary;
+		padding-top: $padding--small;
+		padding-bottom: $padding--small;
+		margin-top: 0;
+		margin-bottom: 0;
+		& h4 {
+			@include headingUC;
+			font-family: $brand--font-med;
+			font-size: 0.9rem;
+			margin-top: 5px;
+			margin-bottom: 2px;
+		}
+		& span {
+			font-family: $brand--font-med;
+		}
+	}
+}
+@media(min-width: $media-tablet) {
+	.org--specifics-project {
+		& .atm--specifics-project {
+			border-top: 1px solid $color--secondary;
+			border-bottom: 1px solid $color--secondary;
+			margin-top: $margin--small;
+			margin-bottom: $margin--small;
+			padding-top: $padding--general;
+			padding-bottom: $padding--general;
+		}
+	}
+}
+
+.ut-end-sp {
+	border-bottom: none!important;
+}
+
+@media(min-width: $media-tablet) {
+	.ut-end-sp {
+		border-bottom: 1px solid $color--secondary!important;
+	}
+}
+
+
+.org--title-project {
+	text-align: center;
+}
+
+.org--blockquote-project {}

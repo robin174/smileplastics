@@ -1,0 +1,39 @@
+header {
+	background-color: $color--white;
+	margin: 0 10px;
+	& .container {
+		padding: 0 $padding--small;
+	}
+	& figure {
+		padding: 15px 0;
+		& img.logo-brand {
+			height: 20px;
+		}
+	}
+}
+
+@media (min-width: $media-tablet) {
+	header {
+		& figure {
+			& img.logo-brand {
+				height: 24px;
+			}
+		}
+	}
+}
+
+@media (min-width: $media-wide) {
+	header {
+		& figure {
+			& img.logo-brand {
+				height: 30px;
+			}
+		}
+	}
+}
+
+@media (min-width: $max-width) {
+	header {
+		margin: 0;
+	}
+}

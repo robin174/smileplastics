@@ -1,0 +1,114 @@
+// Nav - Cart
+.wpmenucart-contents {
+	margin-left: 10px;
+}
+
+.woocommerce {
+	font-family: $brand--font-reg;
+}
+
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea {
+	padding: 5px;
+	font-size: 1rem;
+}
+
+
+// Price
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price {
+	margin-top: 0;
+	color: $color--primary;
+	font-size: 16px;
+	line-height: 1;
+	font-family: $brand--font-med;
+}
+
+// Table: Variations 
+table.variations {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	& label {
+		font-family: $brand--font-med;
+	}
+}
+
+.woocommerce div.product form.cart .variations select {
+	padding: 8px 2px;
+	margin-bottom: 5px;
+	border: 1px solid $color--secondary;
+}
+
+// Quantity 
+.woocommerce div.product form.cart div.quantity {
+	margin-right: 20px;
+}
+
+// Variation: Price section 
+.woocommerce-variation-price {
+	padding: 20px 0;
+}
+
+
+// Variation: Reset button 
+.woocommerce div.product form.cart .reset_variations {
+	color: $color--primary;
+}
+
+
+// General woocommerce 'button' styling:
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt {
+	font-family: $brand--font-med;
+	transition: $base-transition;
+	font-weight: unset;
+	font-size: 1rem;
+	border-radius: 0;
+	border: none;
+	padding: 14px 28px;
+	background: $color--primary;
+	color: $color--white;
+	&:hover {
+		color: $color--white;
+		background-color: $color--primary-dark;
+	}
+}
+
+// Disabled Woocommerce 'button' styling:
+.woocommerce #respond input#submit.alt.disabled, 
+.woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce #respond input#submit.alt:disabled,
+.woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce #respond input#submit.alt:disabled[disabled],
+.woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+.woocommerce a.button.alt.disabled,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt:disabled[disabled],
+.woocommerce a.button.alt:disabled[disabled]:hover,
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button.alt:disabled,
+.woocommerce button.button.alt:disabled:hover,
+.woocommerce button.button.alt:disabled[disabled],
+.woocommerce button.button.alt:disabled[disabled]:hover,
+.woocommerce input.button.alt.disabled,
+.woocommerce input.button.alt.disabled:hover,
+.woocommerce input.button.alt:disabled,
+.woocommerce input.button.alt:disabled:hover,
+.woocommerce input.button.alt:disabled[disabled],
+.woocommerce input.button.alt:disabled[disabled]:hover {
+	font-family: $brand--font-med;
+	font-size: 1rem;
+	font-weight: unset;
+	background: $color--secondary;
+	color: rgba($color--primary,0.5);
+}
+
+// Nav element alignment
+.wpmenucartli {
+	margin-top: 4px;
+}

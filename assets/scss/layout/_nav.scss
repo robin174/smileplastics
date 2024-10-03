@@ -1,0 +1,149 @@
+$bp--small: 576px; // navbar-expand-sm
+$bp--medium: 768px; // navbar-expand-md
+$bp--large: 992px; // navbar-expand-lg
+$bp--xlarge: 1200px; // navbar-expand-xl
+
+// Set breakpoint for navigation from header.php e.g.
+$breakpoint--navigation: $bp--medium;
+
+nav {
+	&.bg-light {
+		background-color: $color--white!important;
+	}
+	padding: $padding--small 0;
+	& h1, h1 a.navbar-brand {
+		@include headingUC; // Can we extend this 
+		font-family: $brand--font-reg;
+		font-size: 0.9rem;
+		color: $color--white;
+		margin-bottom: 0;
+	}
+	& h1 a.navbar-brand:hover {
+		color: $color--secondary;
+	}
+	& a, .nav-link {
+		@include navigationUC;
+		font-size: 13px;
+		color: $color--primary;
+		&:link {
+			color: $color--primary;
+		}
+		&:visited {
+			color: $color--primary;
+		}
+		&:hover {
+			color: $color--primary;
+		}
+		&:active {
+			color: $color--primary;
+		}
+		&:disabled {
+			color: rgba($color--white, 0.3);
+		}
+	}
+	& li.menu-item {
+		transition: $base-transition;
+		padding: 5px 0;
+		//padding-left: 10px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	background-color: $color--secondary;
+}
+
+// focus, active...etc. 
+.navbar button.atmButtonNav {
+	background-color: rgba(255,255,255,0.06);
+	border: 2px solid rgba(255,255,255,0.12);
+	& i {
+		color: $color--primary;
+	} 
+	&:hover {
+		color: red;
+	}
+}
+
+// All the above needs to be converted to the below. What is small -> medium,  what is medium -> x-large.
+// Menu -> Medium: mobile version (off canvas)
+@media (max-width: $breakpoint--navigation - 1px){
+	.offcanvas.offcanvas-end {
+		//backdrop-filter: blur(7px);
+		background-color: rgba($color--secondary,1);
+		color: $color--primary;
+		& h2 {
+			color: white;
+		}
+		& .offcanvas-header {
+			padding: 5px 20px;
+			& figure img.logo-brand {
+				width: 200px;
+			}
+			& button.btn-close {
+				background: unset!important;
+				opacity: unset;
+				& i {
+					color: $color--primary;
+				}
+				&:hover {
+					& i {
+						color: rgba($color--primary,0.5);
+					}
+				}
+			}
+		}
+		& .offcanvas-body {
+			padding: 0;
+		}
+
+		& li.menu-item {
+			transition: $base-transition;
+			padding: 10px 20px;
+			background-color: rgba(0,0,0,0);
+			//border-left: 7px solid $color--black;
+			//background-color: rgba(0,0,0,0.1);
+			&:hover {
+				text-decoration: none;
+				background-color: rgba(0,0,0,0.05);
+				//border-left: 7px solid $color--secondary;
+			}
+			& a.dropdown-item  {
+				background-color: unset!important;
+				&:hover {
+					background-color: unset!important;
+				}
+			}
+		}
+		& li.current-menu-item, li.current-menu-item:hover {
+			background-color: rgba(0,0,0,0.05);
+			//border-left: 7px solid $color--secondary;
+			&:hover {
+				background-color: rgba(0,0,0,0.1);
+				color: $color--secondary;
+			}
+		}
+	}
+}
+
+nav {
+	&.btn-close {
+		width: 3em;
+	    height: 3em;
+		background: unset!important;
+	}
+}
+
+// Medium -> max menu: normal menu-item
+@media (min-width: $breakpoint--navigation){
+	.offcanvas.offcanvas-end {
+		backdrop-filter: unset;
+		background-color: unset;
+		& li.current-menu-item a, li.current-menu-item:hover a {
+			color: $color--primary;
+			text-decoration: none;
+		}
+	}
+}

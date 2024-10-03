@@ -1,0 +1,37 @@
+blockquote {
+	font-size: 1.1rem;
+	font-family: $brand--font-med;
+	margin: 0;
+	padding: 0 $padding--small;
+	&.atm--blockquote-project {
+		font-family: $brand--font-reg;
+		font-size: 1.6rem;
+		line-height: 1.6;
+		& cite {
+			font-family: $brand--font-med;
+			margin-top: 15px;
+			display: block;
+		}
+	}	
+}
+
+.mol--5050-content {
+	& blockquote {
+		padding: 0;
+	}
+}
+
+// Sort a left/right blockquote.
+.templ--single-page, .templ--single-project, .org--page-builder {
+	& blockquote {
+		font-family: $brand--font-reg;
+		font-size: 1.35rem;
+		line-height: 1.55;
+		padding: 2rem 0;
+		& cite {
+			font-family: $brand--font-med;
+			margin-top: 15px;
+			display: block;
+		}
+	}
+}

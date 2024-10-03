@@ -1,0 +1,19 @@
+.org--5050-auxiliary {
+	margin-bottom: 20px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid $color--secondary;
+	&:last-child {
+		border-bottom: none;
+	}
+	& h4 {
+		font-size: 2rem;
+		border-bottom: 2px solid $color--primary;
+		font-family: $brand--stencil-reg;
+		padding-bottom: $padding--large;
+		margin-bottom: $margin--small*1.5;
+	}
+	& h5 {
+		font-size: 1.2rem;
+		font-family: $brand--font-med;
+	}
+}

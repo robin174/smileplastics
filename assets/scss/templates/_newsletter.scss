@@ -1,0 +1,68 @@
+.org--newsletter {
+	color: $color--white;
+	background-color: $color--primary-dark;
+	padding: $padding--general $padding--small;
+	& .mol--newsletter-intro {
+		& h2 {
+			margin-top: 0;
+			color: $color--white;
+			font-size: 1.8rem;
+			letter-spacing: 0.05em;
+		}
+		& p {
+			font-size: 1rem;
+			color: $color--white;
+			margin-bottom: 20px;
+		}	
+	}
+	& .mol--newsletter-form {
+		& input {
+			border: none!important;
+		}
+		& input[type="text"] {
+			border:none;
+			padding-left:15px;
+			height:50px;
+		}
+		& button, input[type="submit"].button {
+			color: $color--primary;
+			min-width: 150px;
+			border:none;
+			transistion: $base-transition;
+			background-color: $color--secondary;
+			height:50px;
+			font-size: 1rem;
+			font-family: $brand--font-med;
+			&:hover {
+				color: $color--primary;
+				background-color: darken($color--secondary, 5%);
+			}
+		}
+	}
+}
+
+@media (min-width: $media-mobile) {
+	.org--newsletter {
+		padding:$padding--small;
+		& .mol--newsletter-intro {
+			& h2 {
+				font-size: 2.8rem;
+			}
+			& p {
+				font-size: 1.2rem;
+			}
+		}
+		& .mol--newsletter-form {
+			& button, input[type="submit"].button {
+				min-width: 200px;
+			}
+		}
+
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--newsletter {
+		padding:$padding--general;
+	}
+}
