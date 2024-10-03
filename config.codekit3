@@ -2079,6 +2079,14 @@
       "oAP" : "\/template-parts\/part-blockquote.php",
       "oF" : 0
     },
+    "\/template-parts\/part-featuredin.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/part-featuredin.php",
+      "oF" : 0
+    },
     "\/template-parts\/part-journal-test.php" : {
       "cB" : 0,
       "ft" : 8192,

@@ -72,6 +72,11 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'   => 'additional-site-settings',
     ));
     acf_add_options_sub_page(array(
+        'page_title'    => 'Featured In',
+        'menu_title'    => 'Featured In',
+        'parent_slug'   => 'additional-site-settings',
+    ));
+    acf_add_options_sub_page(array(
         'page_title'    => 'Testimonials',
         'menu_title'    => 'Testimonials',
         'parent_slug'   => 'additional-site-settings',
