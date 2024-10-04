@@ -22,7 +22,9 @@ get_header(); ?>
 		<?php get_template_part('template-parts/testimonial-slider-splide'); ?>
 
 		<!-- Worked With -->
+		<?php /* 
 		<?php get_template_part('template-parts/part-workedwith'); ?>
+		*/ ?>
 
 		<!-- Quote -->
 		<?php /* 
