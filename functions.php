@@ -170,24 +170,25 @@ function smileplastics_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'smileplastics_login_logo' );
 
 
-
 // Load more on Journal
 function enqueue_masonry_and_load_more_scripts() {
-    // Enqueue Masonry script (included with WordPress)
-    wp_enqueue_script('masonry');
-    
-    // Enqueue custom script for Load More functionality and Masonry initialization
-    wp_enqueue_script('masonry-load-more', get_template_directory_uri() . '/assets/js/masonry-load-more.js', array('jquery', 'masonry'), null, true);
-    
-    // Localize script for AJAX
-    wp_localize_script('masonry-load-more', 'ajax_loadmore', array(
-        'ajax_url' => admin_url('admin-ajax.php'),
-        'posts_per_page' => 10,  // Adjust based on how many posts you want to load
-        'nonce' => wp_create_nonce('load_more_posts'),
-    ));
+    // Only enqueue scripts on non-WooCommerce pages
+    if ( !is_woocommerce() && !is_cart() && !is_checkout() && !is_product() ) {
+        // Enqueue Masonry script (included with WordPress)
+        wp_enqueue_script('masonry');
+        
+        // Enqueue custom script for Load More functionality and Masonry initialization
+        wp_enqueue_script('masonry-load-more', get_template_directory_uri() . '/assets/js/masonry-load-more.js', array('jquery', 'masonry'), null, true);
+        
+        // Localize script for AJAX
+        wp_localize_script('masonry-load-more', 'ajax_loadmore', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'posts_per_page' => 10,  // Adjust based on how many posts you want to load
+            'nonce' => wp_create_nonce('load_more_posts'),
+        ));
+    }
 }
 add_action('wp_enqueue_scripts', 'enqueue_masonry_and_load_more_scripts');
-
 
 function loadmore_ajax_handler() {
     check_ajax_referer('load_more_posts', 'nonce');  // Security check
@@ -218,7 +219,6 @@ function loadmore_ajax_handler() {
 
 add_action('wp_ajax_loadmore_posts', 'loadmore_ajax_handler');  // For logged-in users
 add_action('wp_ajax_nopriv_loadmore_posts', 'loadmore_ajax_handler');  // For non-logged-in users
-
 
 
 /* Load custom WordPress nav walker 5 */

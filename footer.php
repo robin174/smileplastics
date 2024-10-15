@@ -68,11 +68,9 @@
 		</div>
 	</footer>
 
-	<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
-    
-    
-    <!-- Masonry functionality: https://getbootstrap.com/docs/5.3/examples/masonry/ -->
+     <!-- Masonry functionality: https://getbootstrap.com/docs/5.3/examples/masonry/ -->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" sync></script>
 
     <!-- Lead Forensics: https://www.leadforensics.com/ -->
